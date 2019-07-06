@@ -32,11 +32,11 @@
 
 #pragma GCC system_header
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace tr2
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   // Definitions of non-inline functions from __dynamic_bitset_base.
   template<typename _WordT, typename _Alloc>
@@ -273,7 +273,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       return __is;
     }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // tr2
 } // std
 

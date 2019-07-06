@@ -64,11 +64,11 @@
 #include <ext/aligned_buffer.h>
 #endif
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
   namespace __detail
   {
-  _GLIBCXX_BEGIN_NAMESPACE_VERSION
+  _GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
     // Supporting structures are split into common and templated
     // types; the latter publicly inherits from the former in an
@@ -99,10 +99,10 @@ namespace std _GLIBCXX_VISIBILITY(default)
       _M_unhook() _GLIBCXX_USE_NOEXCEPT;
     };
 
-  _GLIBCXX_END_NAMESPACE_VERSION
+  _GLIBCXX_END_NAMESPACE_VERSION;
   } // namespace detail
 
-_GLIBCXX_BEGIN_NAMESPACE_CONTAINER
+_GLIBCXX_BEGIN_NAMESPACE_CONTAINER;
 
   /// An actual node in the %list.
   template<typename _Tp>
@@ -294,7 +294,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
 	       const _List_const_iterator<_Val>& __y) _GLIBCXX_NOEXCEPT
     { return __x._M_node != __y._M_node; }
 
-_GLIBCXX_BEGIN_NAMESPACE_CXX11
+_GLIBCXX_BEGIN_NAMESPACE_CXX11;
   /// See bits/stl_deque.h's _Deque_base for an explanation.
   template<typename _Tp, typename _Alloc>
     class _List_base
@@ -442,7 +442,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CXX11
       { _M_clear(); }
 
       void
-      _M_clear() _GLIBCXX_NOEXCEPT;
+      _M_clear() ;
 
       void
       _M_init() _GLIBCXX_NOEXCEPT
@@ -1867,7 +1867,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CXX11
       }
 #endif
     };
-_GLIBCXX_END_NAMESPACE_CXX11
+_GLIBCXX_END_NAMESPACE_CXX11;
 
   /**
    *  @brief  List equality comparison.
@@ -1950,10 +1950,10 @@ _GLIBCXX_END_NAMESPACE_CXX11
     _GLIBCXX_NOEXCEPT_IF(noexcept(__x.swap(__y)))
     { __x.swap(__y); }
 
-_GLIBCXX_END_NAMESPACE_CONTAINER
+_GLIBCXX_END_NAMESPACE_CONTAINER;
 
 #if _GLIBCXX_USE_CXX11_ABI
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   // Detect when distance is used to compute the size of the whole list.
   template<typename _Tp>
@@ -1988,7 +1988,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       return __n;
     }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 #endif
 } // namespace std
 

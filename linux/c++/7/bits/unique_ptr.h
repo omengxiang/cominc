@@ -38,9 +38,9 @@
 #include <bits/stl_function.h>
 #include <bits/functional_hash.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    * @addtogroup pointer_abstractions
@@ -838,7 +838,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 
   // @} group pointer_abstractions
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif /* _UNIQUE_PTR_H */

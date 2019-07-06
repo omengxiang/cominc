@@ -36,7 +36,7 @@
 #include <debug/formatter.h>
 #include <debug/macros.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace __debug
 {
@@ -308,7 +308,7 @@ namespace __debug
     }
 } // namespace __debug
 
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
   // Tuple interface to class template array.
 
   /// tuple_size
@@ -328,7 +328,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     struct __is_tuple_like_impl<std::__debug::array<_Tp, _Nm>> : true_type
     { };
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace std
 
 #endif // _GLIBCXX_DEBUG_ARRAY

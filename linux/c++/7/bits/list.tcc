@@ -56,9 +56,9 @@
 #ifndef _LIST_TCC
 #define _LIST_TCC 1
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_CONTAINER
+_GLIBCXX_BEGIN_NAMESPACE_CONTAINER;
 
   template<typename _Tp, typename _Alloc>
     void
@@ -593,7 +593,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
 	  }
       }
 
-_GLIBCXX_END_NAMESPACE_CONTAINER
+_GLIBCXX_END_NAMESPACE_CONTAINER;
 } // namespace std
 
 #endif /* _LIST_TCC */

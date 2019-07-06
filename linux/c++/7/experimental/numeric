@@ -40,13 +40,13 @@
 #include <numeric>
 #include <experimental/type_traits>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace experimental
 {
 inline namespace fundamentals_v2
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
 #define __cpp_lib_experimental_gcd_lcm 201411
 
@@ -74,7 +74,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       return std::__detail::__lcm(__m, __n);
     }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace fundamentals_v2
 } // namespace experimental
 } // namespace std

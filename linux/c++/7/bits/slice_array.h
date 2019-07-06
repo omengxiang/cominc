@@ -34,9 +34,9 @@
 
 #pragma GCC system_header
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    * @addtogroup numeric_arrays
@@ -87,7 +87,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
   // _GLIBCXX_RESOLVE_LIB_DEFECTS
   // 543. valarray slice default constructor
   inline
-  slice::slice() 
+  slice::slice()
   : _M_off(0), _M_sz(0), _M_st(0) {}
 
   inline
@@ -268,7 +268,7 @@ _DEFINE_VALARRAY_OPERATOR(>>, __shift_right)
 
   // @} group numeric_arrays
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif /* _SLICE_ARRAY_H */

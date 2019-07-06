@@ -39,7 +39,7 @@ namespace std {
 namespace experimental {
 inline namespace fundamentals_v2 {
 namespace pmr {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
 #define __cpp_lib_experimental_memory_resources 201402L
 
@@ -398,7 +398,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     return __get_default_resource().exchange(__r);
   }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace pmr
 } // namespace fundamentals_v2
 } // namespace experimental

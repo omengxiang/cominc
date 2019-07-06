@@ -75,9 +75,9 @@
 #include <bits/move.h>
 #include <initializer_list>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /// Finds the size of a given tuple type.
   template<typename _Tp>
@@ -399,7 +399,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 
 #endif // C++17
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif

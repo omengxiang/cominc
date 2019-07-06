@@ -103,8 +103,8 @@ namespace std
     // In old abi, or when weak symbols are not supported, there can
     // be multiple instances of a type_info object for one
     // type. Uniqueness must use the _name value, not object address.
-    bool before(const type_info& __arg) const _GLIBCXX_NOEXCEPT;
-    bool operator==(const type_info& __arg) const _GLIBCXX_NOEXCEPT;
+    bool before(const type_info& __arg) const ;
+    bool operator==(const type_info& __arg) const ;
 #else
   #if !__GXX_MERGED_TYPEINFO_NAMES
     /** Returns true if @c *this precedes @c __arg in the implementation's

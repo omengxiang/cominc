@@ -40,13 +40,13 @@
 #include <system_error>
 #include <experimental/bits/lfts_config.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace experimental
 {
 inline namespace fundamentals_v1
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
 // See C++14 §19.5, System error support
 template <typename _Tp>
@@ -55,7 +55,7 @@ template <typename _Tp>
   constexpr bool is_error_condition_enum_v =
     is_error_condition_enum<_Tp>::value;
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace fundamentals_v1
 } // namespace experimental
 } // namespace std

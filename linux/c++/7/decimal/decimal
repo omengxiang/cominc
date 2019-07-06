@@ -25,7 +25,7 @@
  *  This is a Standard C++ Library header.
  */
 
-// ISO/IEC TR 24733 
+// ISO/IEC TR 24733
 // Written by Janis Johnson <janis187@us.ibm.com>
 
 #ifndef _GLIBCXX_DECIMAL
@@ -40,7 +40,7 @@
 that is currently not available.
 #endif
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
   /**
     * @defgroup decimal Decimal Floating-Point Arithmetic
@@ -55,7 +55,7 @@ namespace std _GLIBCXX_VISIBILITY(default)
     */
 namespace decimal
 {
-  _GLIBCXX_BEGIN_NAMESPACE_VERSION
+  _GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   class decimal32;
   class decimal64;
@@ -484,7 +484,7 @@ namespace decimal
 
 #define _GLIBCXX_USE_DECIMAL_ 1
 
-  _GLIBCXX_END_NAMESPACE_VERSION
+  _GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace decimal
   // @} group decimal
 } // namespace std

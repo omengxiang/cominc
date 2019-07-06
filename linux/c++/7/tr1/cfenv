@@ -23,7 +23,7 @@
 // <http://www.gnu.org/licenses/>.
 
 /** @file tr1/cfenv
- *  This is a TR1 C++ Library header. 
+ *  This is a TR1 C++ Library header.
  */
 
 #ifndef _GLIBCXX_TR1_CFENV
@@ -51,7 +51,7 @@
 #undef fesetenv
 #undef feupdateenv
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace tr1
 {

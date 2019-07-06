@@ -43,9 +43,9 @@
 #include <bits/functional_hash.h>
 #include <bits/range_access.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
 #define __cpp_lib_string_view 201603
 
@@ -412,7 +412,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 	const bool __testoff =  __off < this->size() - __pos;
 	return __testoff ? __off : this->size() - __pos;
       }
-      
+
     private:
 
       static constexpr int
@@ -428,22 +428,22 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       size_t	    _M_len;
       const _CharT* _M_str;
     };
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 
   // [string.view.comparison], non-member basic_string_view comparison function
 
   namespace __detail
   {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
     // Identity transform to create a non-deduced context, so that only one
     // argument participates in template argument deduction and the other
     // argument gets implicitly converted to the deduced type. See n3766.html.
     template<typename _Tp>
       using __idt = common_type_t<_Tp>;
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
   }
 
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   template<typename _CharT, typename _Traits>
     constexpr bool
@@ -635,13 +635,13 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     struct __is_fast_hash<hash<u32string_view>> : std::false_type
     { };
 #endif
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 
   inline namespace literals
   {
   inline namespace string_view_literals
   {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
     inline constexpr basic_string_view<char>
     operator""sv(const char* __str, size_t __len) noexcept
@@ -663,7 +663,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     { return basic_string_view<char32_t>{__str, __len}; }
 #endif
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
   } // namespace string_literals
   } // namespace literals
 

@@ -41,11 +41,11 @@
 #include <iosfwd>            // For ostreambuf_iterator, istreambuf_iterator
 #include <cctype>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
-  /** 
+  /**
    *  @defgroup locales Locales
    *
    *  Classes and functions for internationalization and localization.
@@ -150,27 +150,27 @@ _GLIBCXX_BEGIN_NAMESPACE_LDBL
   template<typename _CharT, typename _OutIter = ostreambuf_iterator<_CharT> >
     class num_put;
 _GLIBCXX_END_NAMESPACE_LDBL
-_GLIBCXX_BEGIN_NAMESPACE_CXX11
+_GLIBCXX_BEGIN_NAMESPACE_CXX11;
   template<typename _CharT> class numpunct;
   template<typename _CharT> class numpunct_byname;
-_GLIBCXX_END_NAMESPACE_CXX11
+_GLIBCXX_END_NAMESPACE_CXX11;
 
-_GLIBCXX_BEGIN_NAMESPACE_CXX11
+_GLIBCXX_BEGIN_NAMESPACE_CXX11;
   // 22.2.4 collation
   template<typename _CharT>
     class collate;
   template<typename _CharT>
     class collate_byname;
-_GLIBCXX_END_NAMESPACE_CXX11
+_GLIBCXX_END_NAMESPACE_CXX11;
 
   // 22.2.5 date and time
   class time_base;
-_GLIBCXX_BEGIN_NAMESPACE_CXX11
+_GLIBCXX_BEGIN_NAMESPACE_CXX11;
   template<typename _CharT, typename _InIter =  istreambuf_iterator<_CharT> >
     class time_get;
   template<typename _CharT, typename _InIter =  istreambuf_iterator<_CharT> >
     class time_get_byname;
-_GLIBCXX_END_NAMESPACE_CXX11
+_GLIBCXX_END_NAMESPACE_CXX11;
   template<typename _CharT, typename _OutIter = ostreambuf_iterator<_CharT> >
     class time_put;
   template<typename _CharT, typename _OutIter = ostreambuf_iterator<_CharT> >
@@ -184,23 +184,23 @@ _GLIBCXX_BEGIN_NAMESPACE_LDBL_OR_CXX11
   template<typename _CharT, typename _OutIter = ostreambuf_iterator<_CharT> >
     class money_put;
 _GLIBCXX_END_NAMESPACE_LDBL_OR_CXX11
-_GLIBCXX_BEGIN_NAMESPACE_CXX11
+_GLIBCXX_BEGIN_NAMESPACE_CXX11;
   template<typename _CharT, bool _Intl = false>
     class moneypunct;
   template<typename _CharT, bool _Intl = false>
     class moneypunct_byname;
-_GLIBCXX_END_NAMESPACE_CXX11
+_GLIBCXX_END_NAMESPACE_CXX11;
 
   // 22.2.7 message retrieval
   class messages_base;
-_GLIBCXX_BEGIN_NAMESPACE_CXX11
+_GLIBCXX_BEGIN_NAMESPACE_CXX11;
   template<typename _CharT>
     class messages;
   template<typename _CharT>
     class messages_byname;
-_GLIBCXX_END_NAMESPACE_CXX11
+_GLIBCXX_END_NAMESPACE_CXX11;
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace std
 
 #endif

@@ -40,9 +40,9 @@
 #include <ext/numeric_traits.h>
 #include <ext/pointer.h>
 
-namespace __gnu_cxx _GLIBCXX_VISIBILITY(default)
+namespace __gnu_cxx (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    * @brief An example allocator which uses a non-standard pointer type.
@@ -61,7 +61,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 
       // Note the non-standard pointer types.
       typedef _Pointer_adapter<_Relative_pointer_impl<_Tp> >       pointer;
-      typedef _Pointer_adapter<_Relative_pointer_impl<const _Tp> > 
+      typedef _Pointer_adapter<_Relative_pointer_impl<const _Tp> >
                                                              const_pointer;
 
       typedef _Tp&       reference;
@@ -72,7 +72,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
         struct rebind
         { typedef _ExtPtr_allocator<_Up> other; };
 
-      _ExtPtr_allocator() _GLIBCXX_USE_NOEXCEPT 
+      _ExtPtr_allocator() _GLIBCXX_USE_NOEXCEPT
       : _M_real_alloc() { }
 
       _ExtPtr_allocator(const _ExtPtr_allocator& __rarg) _GLIBCXX_USE_NOEXCEPT
@@ -113,7 +113,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 	{ construct(__p.get(), std::forward<_Args>(__args)...); }
 
       template<typename _Up>
-        void 
+        void
         destroy(_Up* __p)
         { __p->~_Up(); }
 
@@ -191,7 +191,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       __larg._M_real_alloc = __tmp;
     }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif /* _EXTPTR_ALLOCATOR_H */

@@ -38,9 +38,9 @@
 # include <bits/allocator.h>  // for __alloc_swap
 #endif
 
-namespace __gnu_cxx _GLIBCXX_VISIBILITY(default)
+namespace __gnu_cxx (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
 /**
  * @brief  Uniform interface to C++98 and C++11 allocators.
@@ -157,7 +157,7 @@ template<typename _Alloc>
 #endif
   };
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace __gnu_cxx
 
 #endif

@@ -47,9 +47,9 @@
 
 #include <bits/c++config.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    * @defgroup allocators Allocators
@@ -72,7 +72,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 
   /// @} group memory
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace std
 
 #endif

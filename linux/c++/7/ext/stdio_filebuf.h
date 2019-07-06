@@ -33,9 +33,9 @@
 
 #include <fstream>
 
-namespace __gnu_cxx _GLIBCXX_VISIBILITY(default)
+namespace __gnu_cxx (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    *  @brief Provides a layer of compatibility for C/POSIX.
@@ -165,7 +165,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 	}
     }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif

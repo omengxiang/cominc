@@ -53,11 +53,11 @@
 // That's why we introduced dummy node here ------ "end_tag" is a dummy node.
 // All dummy node will be eliminated at the end of compiling process.
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace __detail
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   template<typename _TraitsT>
     _Compiler<_TraitsT>::
@@ -634,6 +634,6 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       }() ^ _M_is_non_matching;
     }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace __detail
 } // namespace

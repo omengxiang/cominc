@@ -37,13 +37,13 @@
 #include <memory>
 #include <experimental/type_traits>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace experimental
 {
 inline namespace fundamentals_v2
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   // 8.2.1
 
@@ -658,11 +658,11 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       mutable weak_ptr<_Tp> _M_weak_this;
     };
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace fundamentals_v2
 } // namespace experimental
 
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /// std::hash specialization for shared_ptr.
   template<typename _Tp>
@@ -674,7 +674,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       { return std::hash<_Tp*>()(__s.get()); }
     };
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace std
 
 #endif // __cplusplus <= 201103L

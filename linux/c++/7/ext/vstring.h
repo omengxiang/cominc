@@ -39,24 +39,24 @@
 #include <ext/rc_string_base.h>
 #include <ext/sso_string_base.h>
 
-namespace __gnu_cxx _GLIBCXX_VISIBILITY(default)
+namespace __gnu_cxx (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    *  @class __versa_string vstring.h
-   *  @brief  Template class __versa_string. 
+   *  @brief  Template class __versa_string.
    *  @ingroup extensions
    *
    *  Data structure managing sequences of characters and
-   *  character-like objects. 
+   *  character-like objects.
    */
   template<typename _CharT, typename _Traits, typename _Alloc,
 	   template <typename, typename, typename> class _Base>
     class __versa_string
     : private _Base<_CharT, _Traits, _Alloc>
     {
-      typedef _Base<_CharT, _Traits, _Alloc>                __vstring_base;    
+      typedef _Base<_CharT, _Traits, _Alloc>                __vstring_base;
       typedef typename __vstring_base::_CharT_alloc_type    _CharT_alloc_type;
 
       // Types:
@@ -246,14 +246,14 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       /**
        *  @brief  Destroy the string instance.
        */
-      ~__versa_string() _GLIBCXX_NOEXCEPT { }	
+      ~__versa_string() _GLIBCXX_NOEXCEPT { }
 
       /**
        *  @brief  Assign the value of @a str to this string.
        *  @param  __str  Source string.
        */
       __versa_string&
-      operator=(const __versa_string& __str) 
+      operator=(const __versa_string& __str)
       { return this->assign(__str); }
 
 #if __cplusplus >= 201103L
@@ -289,7 +289,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
        *  @param  __s  Source null-terminated string.
        */
       __versa_string&
-      operator=(const _CharT* __s) 
+      operator=(const _CharT* __s)
       { return this->assign(__s); }
 
       /**
@@ -300,9 +300,9 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
        *  (*this)[0] == @a __c.
        */
       __versa_string&
-      operator=(_CharT __c) 
-      { 
-	this->assign(1, __c); 
+      operator=(_CharT __c)
+      {
+	this->assign(1, __c);
 	return *this;
       }
 
@@ -515,7 +515,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       { this->_M_clear(); }
 
       /**
-       *  Returns true if the %string is empty.  Equivalent to 
+       *  Returns true if the %string is empty.  Equivalent to
        *  <code>*this == ""</code>.
        */
       bool
@@ -667,7 +667,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
        */
       __versa_string&
       operator+=(_CharT __c)
-      { 
+      {
 	this->push_back(__c);
 	return *this;
       }
@@ -786,7 +786,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
        */
       void
       push_back(_CharT __c)
-      { 
+      {
 	const size_type __size = this->size();
 	if (__size + 1 > this->capacity() || this->_M_is_shared())
 	  this->_M_mutate(__size, size_type(0), 0, size_type(1));
@@ -942,7 +942,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 	_GLIBCXX_DEBUG_PEDASSERT(__p >= _M_ibegin() && __p <= _M_iend());
 	const size_type __pos = __p - _M_ibegin();
 	this->replace(__p, __p, __n, __c);
-	return iterator(this->_M_data() + __pos); 
+	return iterator(this->_M_data() + __pos);
       }
 #else
       /**
@@ -1144,7 +1144,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #if __cplusplus >= 201103L
       insert(const_iterator __p, _CharT __c)
 #else
-      insert(iterator __p, _CharT __c)	
+      insert(iterator __p, _CharT __c)
 #endif
       {
 	_GLIBCXX_DEBUG_PEDASSERT(__p >= _M_ibegin() && __p <= _M_iend());
@@ -1171,7 +1171,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       */
       __versa_string&
       erase(size_type __pos = 0, size_type __n = npos)
-      { 
+      {
 	this->_M_erase(_M_check(__pos, "__versa_string::erase"),
 		       _M_limit(__pos, __n));
 	return *this;
@@ -1189,7 +1189,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #if __cplusplus >= 201103L
       erase(const_iterator __position)
 #else
-      erase(iterator __position)	
+      erase(iterator __position)
 #endif
       {
 	_GLIBCXX_DEBUG_PEDASSERT(__position >= _M_ibegin()
@@ -1325,7 +1325,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
        *  Removes the characters in the range [pos,pos + n1) from this
        *  string.  In place, the characters of @a __s are inserted.  If
        *  @a pos is beyond end of string, out_of_range is thrown.  If
-       *  the length of result exceeds max_size(), length_error is thrown.  
+       *  the length of result exceeds max_size(), length_error is thrown.
        *  The value of the string doesn't change if an error is thrown.
       */
       __versa_string&
@@ -1423,7 +1423,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #if __cplusplus >= 201103L
       replace(const_iterator __i1, const_iterator __i2, const _CharT* __s)
 #else
-      replace(iterator __i1, iterator __i2, const _CharT* __s)	
+      replace(iterator __i1, iterator __i2, const _CharT* __s)
 #endif
       {
 	__glibcxx_requires_string(__s);
@@ -1563,7 +1563,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 	return this->replace(__i1 - _M_ibegin(), __i2 - __i1,
 			     __k1.base(), __k2 - __k1);
       }
-      
+
 #if __cplusplus >= 201103L
       /**
        *  @brief  Replace range of characters with initializer_list.
@@ -1722,7 +1722,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
        *  found.  If not found, returns npos.
       */
       size_type
-      find(_CharT __c, size_type __pos = 0) const _GLIBCXX_NOEXCEPT;
+      find(_CharT __c, size_type __pos = 0) const ;
 
       /**
        *  @brief  Find last position of a string.
@@ -1782,7 +1782,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
        *  found.  If not found, returns npos.
       */
       size_type
-      rfind(_CharT __c, size_type __pos = npos) const _GLIBCXX_NOEXCEPT;
+      rfind(_CharT __c, size_type __pos = npos) const ;
 
       /**
        *  @brief  Find position of a character of string.
@@ -1971,7 +1971,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       */
       size_type
       find_first_not_of(_CharT __c, size_type __pos = 0) const
-	_GLIBCXX_NOEXCEPT;
+	;
 
       /**
        *  @brief  Find last position of a character not in string.
@@ -2034,7 +2034,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       */
       size_type
       find_last_not_of(_CharT __c, size_type __pos = npos) const
-	_GLIBCXX_NOEXCEPT;
+	;
 
       /**
        *  @brief  Get a substring.
@@ -2589,12 +2589,12 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 	 __versa_string<_CharT, _Traits, _Alloc, _Base>& __rhs)
     { __lhs.swap(__rhs); }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    *  @brief  Read stream into a string.
@@ -2675,18 +2675,18 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     inline basic_istream<_CharT, _Traits>&
     getline(basic_istream<_CharT, _Traits>& __is,
 	    __gnu_cxx::__versa_string<_CharT, _Traits, _Alloc, _Base>& __str)
-    { return getline(__is, __str, __is.widen('\n')); }      
+    { return getline(__is, __str, __is.widen('\n')); }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #if __cplusplus >= 201103L
 
 #include <ext/string_conversions.h>
 
-namespace __gnu_cxx _GLIBCXX_VISIBILITY(default)
+namespace __gnu_cxx (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
 #if _GLIBCXX_USE_C99_STDLIB
   // 21.4 Numeric Conversions [string.conversions].
@@ -2795,12 +2795,12 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #endif // _GLIBCXX_USE_C99_STDIO
 
 #if defined(_GLIBCXX_USE_WCHAR_T) && _GLIBCXX_USE_C99_WCHAR
-  inline int 
+  inline int
   stoi(const __wvstring& __str, std::size_t* __idx = 0, int __base = 10)
   { return __gnu_cxx::__stoa<long, int>(&std::wcstol, "stoi", __str.c_str(),
 					__idx, __base); }
 
-  inline long 
+  inline long
   stol(const __wvstring& __str, std::size_t* __idx = 0, int __base = 10)
   { return __gnu_cxx::__stoa(&std::wcstol, "stol", __str.c_str(),
 			     __idx, __base); }
@@ -2897,7 +2897,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #endif // _GLIBCXX_HAVE_BROKEN_VSWPRINTF
 #endif // _GLIBCXX_USE_WCHAR_T && _GLIBCXX_USE_C99_WCHAR
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif
@@ -2906,9 +2906,9 @@ _GLIBCXX_END_NAMESPACE_VERSION
 
 #include <bits/functional_hash.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /// std::hash specialization for __vstring.
   template<>
@@ -2957,11 +2957,11 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     };
 #endif
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif // C++11
 
-#include "vstring.tcc" 
+#include "vstring.tcc"
 
 #endif /* _VSTRING_H */

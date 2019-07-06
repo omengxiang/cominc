@@ -34,9 +34,9 @@
 
 #include <debug/debug.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    * @addtogroup iterators
@@ -216,7 +216,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 
   // @} group iterators
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif

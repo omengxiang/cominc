@@ -33,11 +33,11 @@
 #define _GLIBCXX_REGEX_STATE_LIMIT 100000
 #endif
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace __detail
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    *  @defgroup regex-detail Base and Implementation Classes
@@ -393,7 +393,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     };
 
  //@} regex-detail
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace __detail
 } // namespace std
 

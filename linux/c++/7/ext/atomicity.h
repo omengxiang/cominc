@@ -35,16 +35,16 @@
 #include <bits/gthr.h>
 #include <bits/atomic_word.h>
 
-namespace __gnu_cxx _GLIBCXX_VISIBILITY(default)
+namespace __gnu_cxx (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   // Functions for portable atomic access.
   // To abstract locking primitives across all thread policies, use:
   // __exchange_and_add_dispatch
   // __atomic_add_dispatch
 #ifdef _GLIBCXX_ATOMIC_BUILTINS
-  static inline _Atomic_word 
+  static inline _Atomic_word
   __exchange_and_add(volatile _Atomic_word* __mem, int __val)
   { return __atomic_fetch_add(__mem, __val, __ATOMIC_ACQ_REL); }
 
@@ -101,7 +101,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #endif
   }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 // Even if the CPU doesn't need a memory barrier, we need to ensure
@@ -114,4 +114,4 @@ _GLIBCXX_END_NAMESPACE_VERSION
 #define _GLIBCXX_WRITE_MEM_BARRIER __atomic_thread_fence (__ATOMIC_RELEASE)
 #endif
 
-#endif 
+#endif

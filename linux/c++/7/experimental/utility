@@ -36,12 +36,12 @@
 namespace std {
 namespace experimental {
 inline namespace fundamentals_v2 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   // 3.1.2, erased-type placeholder
   using erased_type = std::__erased_type;
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace fundamentals_v2
 } // namespace experimental
 } // namespace std

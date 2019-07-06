@@ -39,9 +39,9 @@
 #include <ostream>
 #include <istream>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    *  @name Standard Stream Objects
@@ -73,7 +73,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
   // For construction of filebuffers for cout, cin, cerr, clog et. al.
   static ios_base::Init __ioinit;
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif /* _GLIBCXX_IOSTREAM */

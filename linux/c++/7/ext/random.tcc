@@ -32,9 +32,9 @@
 
 #pragma GCC system_header
 
-namespace __gnu_cxx _GLIBCXX_VISIBILITY(default)
+namespace __gnu_cxx (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
 #if __BYTE_ORDER__ == __ORDER_LITTLE_ENDIAN__
 
@@ -1843,7 +1843,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       return __is;
     }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace __gnu_cxx
 
 

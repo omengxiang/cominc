@@ -36,9 +36,9 @@
 
 #ifdef __SSE2__
 
-namespace __gnu_cxx _GLIBCXX_VISIBILITY(default)
+namespace __gnu_cxx (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   namespace {
 
@@ -130,7 +130,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     }
 
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif // __SSE2__

@@ -65,9 +65,9 @@
 
 #include <debug/assertions.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_CONTAINER
+_GLIBCXX_BEGIN_NAMESPACE_CONTAINER;
 
   /// See bits/stl_deque.h's _Deque_base for an explanation.
   template<typename _Tp, typename _Alloc>
@@ -1650,7 +1650,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
     _GLIBCXX_NOEXCEPT_IF(noexcept(__x.swap(__y)))
     { __x.swap(__y); }
 
-_GLIBCXX_END_NAMESPACE_CONTAINER
+_GLIBCXX_END_NAMESPACE_CONTAINER;
 } // namespace std
 
 #endif /* _STL_VECTOR_H */

@@ -90,9 +90,9 @@
 #if __cplusplus >= 201103L
 #  include <cstdint>
 #  ifdef _GLIBCXX_USE_C99_STDINT_TR1
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
 /**
  *  @brief Fit aligned storage in buffer.
@@ -145,7 +145,7 @@ undeclare_no_pointers(char*, size_t) { }
 inline pointer_safety
 get_pointer_safety() noexcept { return pointer_safety::relaxed; }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 #endif // _GLIBCXX_USE_C99_STDINT_TR1
 #endif // C++11

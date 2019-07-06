@@ -64,11 +64,11 @@
 #ifndef _STL_RELOPS_H
 #define _STL_RELOPS_H 1
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
   namespace rel_ops
   {
-  _GLIBCXX_BEGIN_NAMESPACE_VERSION
+  _GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
     /** @namespace std::rel_ops
      *  @brief  The generated relational operators are sequestered here.
@@ -126,7 +126,7 @@ namespace std _GLIBCXX_VISIBILITY(default)
       operator>=(const _Tp& __x, const _Tp& __y)
       { return !(__x < __y); }
 
-  _GLIBCXX_END_NAMESPACE_VERSION
+  _GLIBCXX_END_NAMESPACE_VERSION;
   } // namespace rel_ops
 
 } // namespace std

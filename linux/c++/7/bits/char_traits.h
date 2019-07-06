@@ -44,9 +44,9 @@
 #define _GLIBCXX_ALWAYS_INLINE inline __attribute__((__always_inline__))
 #endif
 
-namespace __gnu_cxx _GLIBCXX_VISIBILITY(default)
+namespace __gnu_cxx (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    *  @brief  Mapping from character type to associated types.
@@ -81,7 +81,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
    *
    *  See https://gcc.gnu.org/onlinedocs/libstdc++/manual/strings.html#strings.string.character_types
    *  for advice on how to make use of this class for @a unusual character
-   *  types. Also, check out include/ext/pod_char_traits.h.  
+   *  types. Also, check out include/ext/pod_char_traits.h.
    */
   template<typename _CharT>
     struct char_traits
@@ -207,12 +207,12 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       return __s;
     }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
 #if __cplusplus > 201402
 #define __cpp_lib_constexpr_char_traits 201611
@@ -492,7 +492,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
   };
 #endif //_GLIBCXX_USE_WCHAR_T
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #if ((__cplusplus >= 201103L) \
@@ -500,9 +500,9 @@ _GLIBCXX_END_NAMESPACE_VERSION
 
 #include <cstdint>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   template<>
     struct char_traits<char16_t>
@@ -662,7 +662,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 
       static char_type*
       copy(char_type* __s1, const char_type* __s2, size_t __n)
-      { 
+      {
 	if (__n == 0)
 	  return __s1;
 	return (static_cast<char_type*>
@@ -698,9 +698,9 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       { return eq_int_type(__c, eof()) ? 0 : __c; }
     };
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
-#endif 
+#endif
 
 #endif // _CHAR_TRAITS_H

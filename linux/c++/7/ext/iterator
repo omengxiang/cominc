@@ -61,9 +61,9 @@
 #include <bits/concept_check.h>
 #include <iterator>
 
-namespace __gnu_cxx _GLIBCXX_VISIBILITY(default)
+namespace __gnu_cxx (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   // There are two signatures for distance.  In addition to the one
   // taking two iterators and returning a result, there is another
@@ -109,7 +109,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       __distance(__first, __last, __n, std::__iterator_category(__first));
     }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif

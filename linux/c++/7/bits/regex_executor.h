@@ -30,11 +30,11 @@
 
 // FIXME convert comments to doxygen format.
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace __detail
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    * @addtogroup regex-detail
@@ -251,7 +251,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     };
 
  //@} regex-detail
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace __detail
 } // namespace std
 

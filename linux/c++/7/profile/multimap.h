@@ -32,7 +32,7 @@
 #include <profile/base.h>
 #include <profile/ordered_base.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace __profile
 {
@@ -369,7 +369,7 @@ namespace __profile
 	std::swap(this->_M_map2umap_info, __x._M_map2umap_info);
 	_Base::swap(__x);
       }
- 
+
       void
       clear() _GLIBCXX_NOEXCEPT
       {

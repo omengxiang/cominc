@@ -37,9 +37,9 @@
 # include <bits/ptr_traits.h>
 # include <bits/alloc_traits.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /// Non-standard RAII type for managing pointers obtained from allocators.
   template<typename _Alloc>
@@ -104,7 +104,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       return { __a, std::allocator_traits<_Alloc>::allocate(__a, 1) };
     }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace std
 
 #endif

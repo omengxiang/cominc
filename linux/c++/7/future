@@ -50,9 +50,9 @@
 #include <bits/allocated_ptr.h>
 #include <ext/aligned_buffer.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    * @defgroup futures Futures
@@ -1753,7 +1753,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #endif // _GLIBCXX_HAS_GTHREADS && _GLIBCXX_USE_C99_STDINT_TR1
 
   // @} group futures
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif // C++11

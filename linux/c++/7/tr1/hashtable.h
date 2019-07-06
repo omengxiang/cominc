@@ -35,11 +35,11 @@
 
 #include <tr1/hashtable_policy.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace tr1
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   // Class template _Hashtable, class definition.
 
@@ -1174,7 +1174,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 	}
     }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace tr1
 } // namespace std
 

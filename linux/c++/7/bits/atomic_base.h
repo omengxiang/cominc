@@ -40,9 +40,9 @@
 #define _GLIBCXX_ALWAYS_INLINE inline __attribute__((__always_inline__))
 #endif
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    * @defgroup atomics Atomics
@@ -790,7 +790,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 
   // @} group atomics
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace std
 
 #endif

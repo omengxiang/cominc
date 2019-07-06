@@ -33,7 +33,7 @@
 #include <profile/base.h>
 #include <profile/iterator_tracker.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace __profile
 {
@@ -102,7 +102,7 @@ namespace __profile
       {
 	_M_size_info =
 	  __profcxx_vector_size_construct(_M_conjure().capacity());
-	_M_vect2list_info = __profcxx_vector2list_construct();	
+	_M_vect2list_info = __profcxx_vector2list_construct();
       }
 
       void
@@ -471,7 +471,7 @@ namespace __profile
 #if __cplusplus >= 201103L
       erase(const_iterator __pos)
 #else
-      erase(iterator __pos)	
+      erase(iterator __pos)
 #endif
       { return iterator(_Base::erase(__pos.base()), this); }
 

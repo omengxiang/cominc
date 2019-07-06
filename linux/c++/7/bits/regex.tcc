@@ -28,11 +28,11 @@
  *  Do not attempt to use it directly. @headername{regex}
  */
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace __detail
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   // Result of merging regex_match and regex_search.
   //
@@ -119,10 +119,10 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       return __ret;
     }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 }
 
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   template<typename _Ch_type>
   template<typename _Fwd_iter>
@@ -661,6 +661,6 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 	_M_result = nullptr;
     }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 

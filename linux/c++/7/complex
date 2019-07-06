@@ -47,9 +47,9 @@
 // Get rid of a macro possibly defined in <complex.h>
 #undef complex
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    * @defgroup complex_numbers Complex Numbers
@@ -1535,12 +1535,12 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 
   // @} group complex_numbers
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
-namespace __gnu_cxx _GLIBCXX_VISIBILITY(default)
+namespace __gnu_cxx (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   // See ext/type_traits.h for the primary template.
   template<typename _Tp, typename _Up>
@@ -1564,14 +1564,14 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       typedef std::complex<typename __promote_2<_Tp, _Up>::__type> __type;
     };
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #if __cplusplus >= 201103L
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   // Forward declarations.
   template<typename _Tp> std::complex<_Tp> acos(const std::complex<_Tp>&);
@@ -1939,13 +1939,13 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       return std::complex<__type>(__x, -__type());
     }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 
 #if __cplusplus > 201103L
 
 inline namespace literals {
 inline namespace complex_literals {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
 #define __cpp_lib_complex_udls 201309
 
@@ -1973,7 +1973,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
   operator""il(unsigned long long __num)
   { return std::complex<long double>{0.0L, static_cast<long double>(__num)}; }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // inline namespace complex_literals
 } // inline namespace literals
 

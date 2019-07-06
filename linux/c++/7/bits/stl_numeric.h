@@ -62,9 +62,9 @@
 
 #if __cplusplus >= 201103L
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    *  @brief  Create a range of sequentially increasing values.
@@ -95,12 +95,12 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 	}
     }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace std
 
 #endif
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 _GLIBCXX_BEGIN_NAMESPACE_ALGO
 

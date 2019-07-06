@@ -34,9 +34,9 @@
 
 #pragma GCC system_header
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    * @addtogroup numeric_arrays
@@ -206,7 +206,7 @@ _DEFINE_VALARRAY_OPERATOR(>>, __shift_right)
 
   // @} group numeric_arrays
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif /* _INDIRECT_ARRAY_H */

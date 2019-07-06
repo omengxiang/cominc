@@ -31,11 +31,11 @@
 
 #pragma GCC system_header
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace tr2
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   bool_set::_Bool_set_val
   bool_set::_S_not[4] =
@@ -69,7 +69,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     { _S_indet, _S_indet, _S_indet, _S_empty },
     { _S_empty, _S_empty, _S_empty, _S_empty } };
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 }
 }
 

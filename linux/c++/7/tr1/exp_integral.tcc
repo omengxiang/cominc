@@ -47,7 +47,7 @@
 
 #include "special_function_util.h"
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 #if _GLIBCXX_USE_STD_SPEC_FUNCS
 #elif defined(_GLIBCXX_TR1_CMATH)
@@ -61,7 +61,7 @@ namespace tr1
   // Implementation-space details.
   namespace __detail
   {
-  _GLIBCXX_BEGIN_NAMESPACE_VERSION
+  _GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
     template<typename _Tp> _Tp __expint_E1(_Tp);
 
@@ -69,12 +69,12 @@ namespace tr1
      *   @brief Return the exponential integral @f$ E_1(x) @f$
      *          by series summation.  This should be good
      *          for @f$ x < 1 @f$.
-     * 
+     *
      *   The exponential integral is given by
      *          \f[
      *            E_1(x) = \int_{1}^{\infty} \frac{e^{-xt}}{t} dt
      *          \f]
-     * 
+     *
      *   @param  __x  The argument of the exponential integral function.
      *   @return  The exponential integral.
      */
@@ -106,12 +106,12 @@ namespace tr1
     /**
      *   @brief Return the exponential integral @f$ E_1(x) @f$
      *          by asymptotic expansion.
-     * 
+     *
      *   The exponential integral is given by
      *          \f[
      *            E_1(x) = \int_{1}^\infty \frac{e^{-xt}}{t} dt
      *          \f]
-     * 
+     *
      *   @param  __x  The argument of the exponential integral function.
      *   @return  The exponential integral.
      */
@@ -142,12 +142,12 @@ namespace tr1
     /**
      *   @brief Return the exponential integral @f$ E_n(x) @f$
      *          by series summation.
-     * 
+     *
      *   The exponential integral is given by
      *          \f[
      *            E_n(x) = \int_{1}^\infty \frac{e^{-xt}}{t^n} dt
      *          \f]
-     * 
+     *
      *   @param  __n  The order of the exponential integral function.
      *   @param  __x  The argument of the exponential integral function.
      *   @return  The exponential integral.
@@ -174,7 +174,7 @@ namespace tr1
               _Tp __psi = -__numeric_constants<_Tp>::gamma_e();
               for (int __ii = 1; __ii <= __nm1; ++__ii)
                 __psi += _Tp(1) / _Tp(__ii);
-              __del = __fact * (__psi - std::log(__x)); 
+              __del = __fact * (__psi - std::log(__x));
             }
           __ans += __del;
           if (std::abs(__del) < __eps * std::abs(__ans))
@@ -188,12 +188,12 @@ namespace tr1
     /**
      *   @brief Return the exponential integral @f$ E_n(x) @f$
      *          by continued fractions.
-     * 
+     *
      *   The exponential integral is given by
      *          \f[
      *            E_n(x) = \int_{1}^\infty \frac{e^{-xt}}{t^n} dt
      *          \f]
-     * 
+     *
      *   @param  __n  The order of the exponential integral function.
      *   @param  __x  The argument of the exponential integral function.
      *   @return  The exponential integral.
@@ -233,12 +233,12 @@ namespace tr1
      *   @brief Return the exponential integral @f$ E_n(x) @f$
      *          by recursion.  Use upward recursion for @f$ x < n @f$
      *          and downward recursion (Miller's algorithm) otherwise.
-     * 
+     *
      *   The exponential integral is given by
      *          \f[
      *            E_n(x) = \int_{1}^\infty \frac{e^{-xt}}{t^n} dt
      *          \f]
-     * 
+     *
      *   @param  __n  The order of the exponential integral function.
      *   @param  __x  The argument of the exponential integral function.
      *   @return  The exponential integral.
@@ -278,12 +278,12 @@ namespace tr1
     /**
      *   @brief Return the exponential integral @f$ Ei(x) @f$
      *          by series summation.
-     * 
+     *
      *   The exponential integral is given by
      *          \f[
      *            Ei(x) = -\int_{-x}^\infty \frac{e^t}{t} dt
      *          \f]
-     * 
+     *
      *   @param  __x  The argument of the exponential integral function.
      *   @return  The exponential integral.
      */
@@ -309,12 +309,12 @@ namespace tr1
     /**
      *   @brief Return the exponential integral @f$ Ei(x) @f$
      *          by asymptotic expansion.
-     * 
+     *
      *   The exponential integral is given by
      *          \f[
      *            Ei(x) = -\int_{-x}^\infty \frac{e^t}{t} dt
      *          \f]
-     * 
+     *
      *   @param  __x  The argument of the exponential integral function.
      *   @return  The exponential integral.
      */
@@ -342,12 +342,12 @@ namespace tr1
 
     /**
      *   @brief Return the exponential integral @f$ Ei(x) @f$.
-     * 
+     *
      *   The exponential integral is given by
      *          \f[
      *            Ei(x) = -\int_{-x}^\infty \frac{e^t}{t} dt
      *          \f]
-     * 
+     *
      *   @param  __x  The argument of the exponential integral function.
      *   @return  The exponential integral.
      */
@@ -366,12 +366,12 @@ namespace tr1
 
     /**
      *   @brief Return the exponential integral @f$ E_1(x) @f$.
-     * 
+     *
      *   The exponential integral is given by
      *          \f[
      *            E_1(x) = \int_{1}^\infty \frac{e^{-xt}}{t} dt
      *          \f]
-     * 
+     *
      *   @param  __x  The argument of the exponential integral function.
      *   @return  The exponential integral.
      */
@@ -393,14 +393,14 @@ namespace tr1
     /**
      *   @brief Return the exponential integral @f$ E_n(x) @f$
      *          for large argument.
-     * 
+     *
      *   The exponential integral is given by
      *          \f[
      *            E_n(x) = \int_{1}^\infty \frac{e^{-xt}}{t^n} dt
      *          \f]
-     * 
+     *
      *   This is something of an extension.
-     * 
+     *
      *   @param  __n  The order of the exponential integral function.
      *   @param  __x  The argument of the exponential integral function.
      *   @return  The exponential integral.
@@ -427,14 +427,14 @@ namespace tr1
     /**
      *   @brief Return the exponential integral @f$ E_n(x) @f$
      *          for large order.
-     * 
+     *
      *   The exponential integral is given by
      *          \f[
      *            E_n(x) = \int_{1}^\infty \frac{e^{-xt}}{t^n} dt
      *          \f]
-     *        
+     *
      *   This is something of an extension.
-     * 
+     *
      *   @param  __n  The order of the exponential integral function.
      *   @param  __x  The argument of the exponential integral function.
      *   @return  The exponential integral.
@@ -462,13 +462,13 @@ namespace tr1
 
     /**
      *   @brief Return the exponential integral @f$ E_n(x) @f$.
-     * 
+     *
      *   The exponential integral is given by
      *          \f[
      *            E_n(x) = \int_{1}^\infty \frac{e^{-xt}}{t^n} dt
      *          \f]
      *   This is something of an extension.
-     * 
+     *
      *   @param  __n  The order of the exponential integral function.
      *   @param  __x  The argument of the exponential integral function.
      *   @return  The exponential integral.
@@ -504,12 +504,12 @@ namespace tr1
 
     /**
      *   @brief Return the exponential integral @f$ Ei(x) @f$.
-     * 
+     *
      *   The exponential integral is given by
      *   \f[
      *     Ei(x) = -\int_{-x}^\infty \frac{e^t}{t} dt
      *   \f]
-     * 
+     *
      *   @param  __x  The argument of the exponential integral function.
      *   @return  The exponential integral.
      */
@@ -523,7 +523,7 @@ namespace tr1
         return __expint_Ei(__x);
     }
 
-  _GLIBCXX_END_NAMESPACE_VERSION
+  _GLIBCXX_END_NAMESPACE_VERSION;
   } // namespace __detail
 #if ! _GLIBCXX_USE_STD_SPEC_FUNCS && defined(_GLIBCXX_TR1_CMATH)
 } // namespace tr1

@@ -35,7 +35,7 @@
 
 #pragma GCC system_header
 
-#include <bits/c++config.h>
+
 #include <bits/stringfwd.h>
 #include <bits/char_traits.h>  // NB: In turn includes stl_algobase.h
 #include <bits/allocator.h>

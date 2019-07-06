@@ -36,7 +36,7 @@
 #include <debug/safe_container.h>
 #include <debug/safe_iterator.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace __debug
 {
@@ -534,7 +534,7 @@ namespace __debug
 #if __cplusplus >= 201103L
       erase(const_iterator __position)
 #else
-      erase(iterator __position)	
+      erase(iterator __position)
 #endif
       {
 	__glibcxx_check_erase(__position);

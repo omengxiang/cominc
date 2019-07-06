@@ -32,9 +32,9 @@
 
 #pragma GCC system_header
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   struct _Enable_default_constructor_tag
   {
@@ -306,7 +306,7 @@ template<typename _Tag>
     operator=(_Enable_copy_move&&) noexcept                         = delete;
   };
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace std
 
 #endif // _ENABLE_SPECIAL_MEMBERS_H

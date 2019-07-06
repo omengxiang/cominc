@@ -35,7 +35,7 @@
 
 #include <forward_list>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace __profile
 {

@@ -38,9 +38,9 @@
 
 #pragma GCC system_header
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /// Empty base class for codecvt facet [22.2.1.5].
   class codecvt_base
@@ -675,7 +675,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 
 #endif
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace std
 
 #endif // _CODECVT_H

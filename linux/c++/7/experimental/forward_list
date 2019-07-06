@@ -36,16 +36,16 @@
 #include <forward_list>
 #include <experimental/memory_resource>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace experimental
 {
 inline namespace fundamentals_v2
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   template<typename _Tp, typename _Alloc, typename _Predicate>
-    inline void 
+    inline void
     erase_if(forward_list<_Tp, _Alloc>& __cont, _Predicate __pred)
     { __cont.remove_if(__pred); }
 
@@ -57,15 +57,15 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       erase_if(__cont, [&](__elem_type& __elem) { return __elem == __value; });
     }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 
 namespace pmr {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   template<typename _Tp>
     using forward_list = std::forward_list<_Tp, polymorphic_allocator<_Tp>>;
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace pmr
 
 } // namespace fundamentals_v2

@@ -67,15 +67,15 @@
 # include <type_traits>  // For __void_t, is_convertible
 #endif
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    *  @defgroup iterators Iterators
    *  Abstractions for uniform iterating through various underlying types.
   */
-  //@{ 
+  //@{
 
   /**
    *  @defgroup iterator_tags Iterator Tags
@@ -84,7 +84,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
    *  are.  Different underlying algorithms can then be used based on the
    *  different operations supported by different iterator types.
   */
-  //@{ 
+  //@{
   ///  Marking input iterators.
   struct input_iterator_tag { };
 
@@ -235,7 +235,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 			       input_iterator_tag>::value>::type;
 #endif
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif /* _STL_ITERATOR_BASE_TYPES_H */

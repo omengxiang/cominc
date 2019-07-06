@@ -41,13 +41,13 @@
 #include <iosfwd>
 #include <experimental/type_traits>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace experimental
 {
 inline namespace fundamentals_v2
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
 #define __cpp_lib_experimental_ostream_joiner 201411
 
@@ -104,7 +104,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 			_DelimT&& __delimiter)
     { return { __os, std::forward<_DelimT>(__delimiter) }; }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace fundamentals_v2
 } // namespace experimental
 } // namespace std

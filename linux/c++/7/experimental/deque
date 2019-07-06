@@ -37,13 +37,13 @@
 #include <algorithm>
 #include <experimental/memory_resource>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace experimental
 {
 inline namespace fundamentals_v2
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   template<typename _Tp, typename _Alloc, typename _Predicate>
     void
@@ -61,15 +61,15 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 		   __cont.end());
     }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 
 namespace pmr {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   template<typename _Tp>
     using deque = std::deque<_Tp, polymorphic_allocator<_Tp>>;
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace pmr
 
 } // namespace fundamentals_v2

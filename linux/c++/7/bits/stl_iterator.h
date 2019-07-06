@@ -69,9 +69,9 @@
 # define __cpp_lib_array_constexpr 201603
 #endif
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    * @addtogroup iterators
@@ -743,12 +743,12 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 
   // @} group iterators
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
-namespace __gnu_cxx _GLIBCXX_VISIBILITY(default)
+namespace __gnu_cxx (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   // This iterator adapter is @a normal in the sense that it does not
   // change the semantics of any of the operators of its iterator
@@ -974,26 +974,26 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     _GLIBCXX_NOEXCEPT
     { return __normal_iterator<_Iterator, _Container>(__i.base() + __n); }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   template<typename _Iterator, typename _Container>
     _Iterator
     __niter_base(__gnu_cxx::__normal_iterator<_Iterator, _Container> __it)
     { return __it.base(); }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #if __cplusplus >= 201103L
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    * @addtogroup iterators
@@ -1100,10 +1100,10 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       _GLIBCXX17_CONSTEXPR move_iterator
       operator-(difference_type __n) const
       { return move_iterator(_M_current - __n); }
-    
+
       _GLIBCXX17_CONSTEXPR move_iterator&
       operator-=(difference_type __n)
-      { 
+      {
 	_M_current -= __n;
 	return *this;
       }
@@ -1245,7 +1245,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     -> decltype(__miter_base(__it.base()))
     { return __miter_base(__it.base()); }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #define _GLIBCXX_MAKE_MOVE_ITERATOR(_Iter) std::make_move_iterator(_Iter)

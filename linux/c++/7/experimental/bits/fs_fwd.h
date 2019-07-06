@@ -38,7 +38,7 @@
 #include <cstdint>
 #include <chrono>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace experimental
 {
@@ -49,7 +49,7 @@ inline namespace v1
 #if _GLIBCXX_INLINE_VERSION
 inline namespace __7 { }
 #endif
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
 #if _GLIBCXX_USE_CXX11_ABI
 inline namespace __cxx11 __attribute__((__abi_tag__ ("cxx11"))) { }
@@ -66,13 +66,13 @@ inline namespace __cxx11 __attribute__((__abi_tag__ ("cxx11"))) { }
    */
 
   class file_status;
-_GLIBCXX_BEGIN_NAMESPACE_CXX11
+_GLIBCXX_BEGIN_NAMESPACE_CXX11;
   class path;
   class filesystem_error;
   class directory_entry;
   class directory_iterator;
   class recursive_directory_iterator;
-_GLIBCXX_END_NAMESPACE_CXX11
+_GLIBCXX_END_NAMESPACE_CXX11;
 
   struct space_info
   {
@@ -282,7 +282,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
   bool is_symlink(file_status) noexcept;
 
   // @} group filesystem
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace v1
 } // namespace filesystem
 } // namespace experimental

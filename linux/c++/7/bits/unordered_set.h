@@ -30,9 +30,9 @@
 #ifndef _UNORDERED_SET_H
 #define _UNORDERED_SET_H
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_CONTAINER
+_GLIBCXX_BEGIN_NAMESPACE_CONTAINER;
 
   /// Base types for unordered_set.
   template<bool _Cache>
@@ -1554,10 +1554,10 @@ _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
 	       const unordered_multiset<_Value, _Hash, _Pred, _Alloc>& __y)
     { return !(__x == __y); }
 
-_GLIBCXX_END_NAMESPACE_CONTAINER
+_GLIBCXX_END_NAMESPACE_CONTAINER;
 
 #if __cplusplus > 201402L
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
   // Allow std::unordered_set access to internals of compatible sets.
   template<typename _Val, typename _Hash1, typename _Eq1, typename _Alloc,
 	   typename _Hash2, typename _Eq2>
@@ -1604,7 +1604,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       _S_get_table(unordered_multiset<_Val, _Hash2, _Eq2, _Alloc>& __set)
       { return __set._M_h; }
     };
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 #endif // C++17
 
 } // namespace std

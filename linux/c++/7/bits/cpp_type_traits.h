@@ -66,9 +66,9 @@
 
 extern "C++" {
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   struct __true_type { };
   struct __false_type { };
@@ -331,7 +331,7 @@ __INT_N(__GLIBCXX_TYPE_INT_N_3)
 
   //
   // A scalar type is an arithmetic type or a pointer type
-  // 
+  //
   template<typename _Tp>
     struct __is_scalar
     : public __traitor<__is_arithmetic<_Tp>, __is_pointer<_Tp> >
@@ -408,7 +408,7 @@ __INT_N(__GLIBCXX_TYPE_INT_N_3)
     __miter_base(_Iterator __it)
     { return __it; }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 } // extern "C++"
 

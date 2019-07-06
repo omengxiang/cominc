@@ -47,9 +47,9 @@
 #include <ext/numeric_traits.h>
 #include <bits/streambuf_iterator.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   // NB: Don't instantiate required wchar_t facets if no wchar_t support.
 #ifdef _GLIBCXX_USE_WCHAR_T
@@ -1527,15 +1527,15 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     };
 #endif
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 // Include host and configuration specific ctype inlines.
 #include <bits/ctype_inline.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   // 22.2.2  The numeric category.
   class __num_base
@@ -1646,7 +1646,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 	}
     }
 
-_GLIBCXX_BEGIN_NAMESPACE_CXX11
+_GLIBCXX_BEGIN_NAMESPACE_CXX11;
 
   /**
    *  @brief  Primary class template numpunct.
@@ -1927,7 +1927,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CXX11
       ~numpunct_byname() { }
     };
 
-_GLIBCXX_END_NAMESPACE_CXX11
+_GLIBCXX_END_NAMESPACE_CXX11;
 
 _GLIBCXX_BEGIN_NAMESPACE_LDBL
 
@@ -2645,7 +2645,7 @@ _GLIBCXX_END_NAMESPACE_LDBL
     tolower(_CharT __c, const locale& __loc)
     { return use_facet<ctype<_CharT> >(__loc).tolower(__c); }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace std
 
 # include <bits/locale_facets.tcc>

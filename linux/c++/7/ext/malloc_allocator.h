@@ -38,9 +38,9 @@
 #include <type_traits>
 #endif
 
-namespace __gnu_cxx _GLIBCXX_VISIBILITY(default)
+namespace __gnu_cxx (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   using std::size_t;
   using std::ptrdiff_t;
@@ -49,7 +49,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
    *  @brief  An allocator that uses malloc.
    *  @ingroup allocators
    *
-   *  This is precisely the allocator defined in the C++ Standard. 
+   *  This is precisely the allocator defined in the C++ Standard.
    *    - all allocation calls malloc
    *    - all deallocation calls free
    */
@@ -135,7 +135,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       { std::free(static_cast<void*>(__p)); }
 
       size_type
-      max_size() const _GLIBCXX_USE_NOEXCEPT 
+      max_size() const _GLIBCXX_USE_NOEXCEPT
       { return size_t(-1) / sizeof(_Tp); }
 
 #if __cplusplus >= 201103L
@@ -145,16 +145,16 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 	{ ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }
 
       template<typename _Up>
-        void 
+        void
         destroy(_Up* __p) { __p->~_Up(); }
 #else
       // _GLIBCXX_RESOLVE_LIB_DEFECTS
       // 402. wrong new expression in [some_] allocator::construct
-      void 
-      construct(pointer __p, const _Tp& __val) 
+      void
+      construct(pointer __p, const _Tp& __val)
       { ::new((void *)__p) value_type(__val); }
 
-      void 
+      void
       destroy(pointer __p) { __p->~_Tp(); }
 #endif
     };
@@ -163,13 +163,13 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     inline bool
     operator==(const malloc_allocator<_Tp>&, const malloc_allocator<_Tp>&)
     { return true; }
-  
+
   template<typename _Tp>
     inline bool
     operator!=(const malloc_allocator<_Tp>&, const malloc_allocator<_Tp>&)
     { return false; }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif

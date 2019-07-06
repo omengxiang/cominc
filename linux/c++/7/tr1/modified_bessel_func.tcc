@@ -48,7 +48,7 @@
 
 #include "special_function_util.h"
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 #if _GLIBCXX_USE_STD_SPEC_FUNCS
 #elif defined(_GLIBCXX_TR1_CMATH)
@@ -62,7 +62,7 @@ namespace tr1
   // Implementation-space details.
   namespace __detail
   {
-  _GLIBCXX_BEGIN_NAMESPACE_VERSION
+  _GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
     /**
      *   @brief  Compute the modified Bessel functions @f$ I_\nu(x) @f$ and
@@ -182,7 +182,7 @@ namespace tr1
               __p /= __i - __mu;
               __q /= __i + __mu;
               const _Tp __del = __c * __ff;
-              __sum += __del; 
+              __sum += __del;
               const _Tp __del1 = __c * (__p - __i * __ff);
               __sum1 += __del1;
               if (std::abs(__del) < __eps * std::abs(__sum))
@@ -245,7 +245,7 @@ namespace tr1
         }
       __Knu = __Kmu;
       __Kpnu = __nu * __xi * __Kmu - __Knu1;
-  
+
       return;
     }
 
@@ -431,7 +431,7 @@ namespace tr1
       return;
     }
 
-  _GLIBCXX_END_NAMESPACE_VERSION
+  _GLIBCXX_END_NAMESPACE_VERSION;
   } // namespace __detail
 #if ! _GLIBCXX_USE_STD_SPEC_FUNCS && defined(_GLIBCXX_TR1_CMATH)
 } // namespace tr1

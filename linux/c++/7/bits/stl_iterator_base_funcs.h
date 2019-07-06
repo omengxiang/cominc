@@ -64,15 +64,15 @@
 #include <bits/concept_check.h>
 #include <debug/assertions.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_CONTAINER
+_GLIBCXX_BEGIN_NAMESPACE_CONTAINER;
   // Forward declaration for the overloads of __distance.
   template <typename> struct _List_iterator;
   template <typename> struct _List_const_iterator;
-_GLIBCXX_END_NAMESPACE_CONTAINER
+_GLIBCXX_END_NAMESPACE_CONTAINER;
 
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   template<typename _InputIterator>
     inline _GLIBCXX14_CONSTEXPR
@@ -218,7 +218,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
   template<typename _BidirectionalIterator>
     inline _GLIBCXX17_CONSTEXPR _BidirectionalIterator
     prev(_BidirectionalIterator __x, typename
-	 iterator_traits<_BidirectionalIterator>::difference_type __n = 1) 
+	 iterator_traits<_BidirectionalIterator>::difference_type __n = 1)
     {
       // concept requirements
       __glibcxx_function_requires(_BidirectionalIteratorConcept<
@@ -229,7 +229,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 
 #endif // C++11
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif /* _STL_ITERATOR_BASE_FUNCS_H */

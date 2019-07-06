@@ -38,13 +38,13 @@
 
 #if __cplusplus >= 201402L
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace experimental
 {
 inline namespace fundamentals_v1
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   template<typename _CharT, typename _Traits>
     constexpr typename basic_string_view<_CharT, _Traits>::size_type
@@ -221,7 +221,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       return npos;
     }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace fundamentals_v1
 } // namespace experimental
 } // namespace std

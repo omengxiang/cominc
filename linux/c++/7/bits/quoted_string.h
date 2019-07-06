@@ -37,10 +37,10 @@
 #else
 #include <sstream>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
   namespace __detail {
-  _GLIBCXX_BEGIN_NAMESPACE_VERSION
+  _GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
     /**
      * @brief Struct for delimited strings.
@@ -156,7 +156,7 @@ namespace std _GLIBCXX_VISIBILITY(default)
 	return __is;
       }
 
-  _GLIBCXX_END_NAMESPACE_VERSION
+  _GLIBCXX_END_NAMESPACE_VERSION;
   } // namespace __detail
 } // namespace std
 

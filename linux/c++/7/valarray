@@ -41,9 +41,9 @@
 #include <initializer_list>
 #endif
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   template<class _Clos, typename _Tp>
     class _Expr;
@@ -83,15 +83,15 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
   template<class _Tp> class mask_array;     // masked array
   template<class _Tp> class indirect_array; // indirected array
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #include <bits/valarray_array.h>
 #include <bits/valarray_before.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    * @defgroup numeric_arrays Numeric Arrays
@@ -165,7 +165,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       template<class _Dom>
 	valarray(const _Expr<_Dom, _Tp>& __e);
 
-      ~valarray() _GLIBCXX_NOEXCEPT;
+      ~valarray() ;
 
       // _lib.valarray.assign_ assignment:
       /**
@@ -586,7 +586,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 
   // @} group numeric_arrays
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #include <bits/valarray_after.h>
@@ -596,9 +596,9 @@ _GLIBCXX_END_NAMESPACE_VERSION
 #include <bits/mask_array.h>
 #include <bits/indirect_array.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    * @addtogroup numeric_arrays
@@ -1234,7 +1234,7 @@ _DEFINE_BINARY_OPERATOR(>=, __greater_equal)
 
   // @} group numeric_arrays
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif /* _GLIBCXX_VALARRAY */

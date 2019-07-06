@@ -28,11 +28,11 @@
 
 #include <ratio>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace tr2
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   template<intmax_t _Pn, size_t _Bit,
 	     bool = _Bit < static_cast<size_t>
@@ -54,6 +54,6 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
   //typedef ratio<__safe_lshift<1, 70>::__value, 1> zebi;
   //typedef ratio<__safe_lshift<1, 80>::__value, 1> yobi;
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 }
 }

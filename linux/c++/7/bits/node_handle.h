@@ -40,9 +40,9 @@
 #include <bits/alloc_traits.h>
 #include <bits/ptr_traits.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /// Base class for node handle types of maps and sets.
   template<typename _Val, typename _NodeAlloc>
@@ -286,7 +286,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       _NodeHandle	node;
     };
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace std
 
 #endif // C++17

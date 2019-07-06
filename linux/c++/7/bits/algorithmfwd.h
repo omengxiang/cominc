@@ -39,9 +39,9 @@
 #include <initializer_list>
 #endif
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /*
     adjacent_find
@@ -615,7 +615,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     _FIter
     upper_bound(_FIter, _FIter, const _Tp&, _Compare);
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 
 _GLIBCXX_BEGIN_NAMESPACE_ALGO
 

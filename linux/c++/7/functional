@@ -64,9 +64,9 @@
 # include <bits/stl_algo.h>
 #endif
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
 #if __cplusplus > 201402L
 # define __cpp_lib_invoke 201411
@@ -259,7 +259,7 @@ _GLIBCXX_MEM_FN_TRAITS(&& noexcept, false_type, true_type)
    */
   template<int _Num> struct _Placeholder { };
 
-  _GLIBCXX_END_NAMESPACE_VERSION
+  _GLIBCXX_END_NAMESPACE_VERSION;
 
   /** @namespace std::placeholders
    *  @brief ISO C++11 entities sub-namespace for functional.
@@ -267,7 +267,7 @@ _GLIBCXX_MEM_FN_TRAITS(&& noexcept, false_type, true_type)
    */
   namespace placeholders
   {
-  _GLIBCXX_BEGIN_NAMESPACE_VERSION
+  _GLIBCXX_BEGIN_NAMESPACE_VERSION;
   /* Define a large number of placeholders. There is no way to
    * simplify this with variadic templates, because we're introducing
    * unique names for each.
@@ -301,10 +301,10 @@ _GLIBCXX_MEM_FN_TRAITS(&& noexcept, false_type, true_type)
     extern const _Placeholder<27> _27;
     extern const _Placeholder<28> _28;
     extern const _Placeholder<29> _29;
-  _GLIBCXX_END_NAMESPACE_VERSION
+  _GLIBCXX_END_NAMESPACE_VERSION;
   }
 
-  _GLIBCXX_BEGIN_NAMESPACE_VERSION
+  _GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    *  Partial specialization of is_placeholder that provides the placeholder
@@ -1242,7 +1242,7 @@ _GLIBCXX_MEM_FN_TRAITS(&& noexcept, false_type, true_type)
 #endif // C++17
 #endif // C++14
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace std
 
 #endif // C++11

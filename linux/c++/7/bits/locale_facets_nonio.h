@@ -38,9 +38,9 @@
 
 #include <ctime>	// For struct tm
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    *  @brief  Time format ordering data.
@@ -141,7 +141,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     private:
       __timepunct_cache&
       operator=(const __timepunct_cache&);
-      
+
       explicit
       __timepunct_cache(const __timepunct_cache&);
     };
@@ -337,17 +337,17 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 				 const tm*) const throw ();
 #endif
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
   // Include host and configuration specific timepunct functions.
   #include <bits/time_members.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
-_GLIBCXX_BEGIN_NAMESPACE_CXX11
+_GLIBCXX_BEGIN_NAMESPACE_CXX11;
 
   /**
    *  @brief  Primary class template time_get.
@@ -777,7 +777,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CXX11
       ~time_get_byname() { }
     };
 
-_GLIBCXX_END_NAMESPACE_CXX11
+_GLIBCXX_END_NAMESPACE_CXX11;
 
   /**
    *  @brief  Primary class template time_put.
@@ -992,7 +992,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
     private:
       __moneypunct_cache&
       operator=(const __moneypunct_cache&);
-      
+
       explicit
       __moneypunct_cache(const __moneypunct_cache&);
     };
@@ -1009,7 +1009,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
 	}
     }
 
-_GLIBCXX_BEGIN_NAMESPACE_CXX11
+_GLIBCXX_BEGIN_NAMESPACE_CXX11;
 
   /**
    *  @brief  Primary class template moneypunct.
@@ -1445,7 +1445,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CXX11
   template<typename _CharT, bool _Intl>
     const bool moneypunct_byname<_CharT, _Intl>::intl;
 
-_GLIBCXX_END_NAMESPACE_CXX11
+_GLIBCXX_END_NAMESPACE_CXX11;
 
 _GLIBCXX_BEGIN_NAMESPACE_LDBL_OR_CXX11
 
@@ -1596,7 +1596,7 @@ _GLIBCXX_BEGIN_NAMESPACE_LDBL_OR_CXX11
       template<bool _Intl>
         iter_type
         _M_extract(iter_type __s, iter_type __end, ios_base& __io,
-		   ios_base::iostate& __err, string& __digits) const;     
+		   ios_base::iostate& __err, string& __digits) const;
     };
 
   template<typename _CharT, typename _InIter>
@@ -1770,7 +1770,7 @@ _GLIBCXX_END_NAMESPACE_LDBL_OR_CXX11
     typedef int catalog;
   };
 
-_GLIBCXX_BEGIN_NAMESPACE_CXX11
+_GLIBCXX_BEGIN_NAMESPACE_CXX11;
 
   /**
    *  @brief  Primary class template messages.
@@ -1999,9 +1999,9 @@ _GLIBCXX_BEGIN_NAMESPACE_CXX11
       { }
     };
 
-_GLIBCXX_END_NAMESPACE_CXX11
+_GLIBCXX_END_NAMESPACE_CXX11;
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 // Include host and configuration specific messages functions.

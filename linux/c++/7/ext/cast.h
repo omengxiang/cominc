@@ -30,9 +30,9 @@
 #ifndef _GLIBCXX_CAST_H
 #define _GLIBCXX_CAST_H 1
 
-namespace __gnu_cxx _GLIBCXX_VISIBILITY(default)
+namespace __gnu_cxx (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    * These functions are here to allow containers to support non standard
@@ -115,7 +115,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     { return _ToType(reinterpret_cast<typename _Caster<_ToType>::
 		     type>(__arg)); }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif // _GLIBCXX_CAST_H

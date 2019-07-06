@@ -32,7 +32,7 @@
 #include <profile/base.h>
 #include <profile/ordered_base.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace __profile
 {

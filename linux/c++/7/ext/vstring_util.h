@@ -43,9 +43,9 @@
 #include <bits/move.h>
 #include <bits/range_access.h>
 
-namespace __gnu_cxx _GLIBCXX_VISIBILITY(default)
+namespace __gnu_cxx (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   template<typename _CharT, typename _Traits, typename _Alloc>
     struct __vstring_utility
@@ -177,7 +177,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       }
     };
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif /* _VSTRING_UTIL_H */

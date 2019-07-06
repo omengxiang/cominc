@@ -40,9 +40,9 @@
 #include <bits/invoke.h>
 #include <bits/stl_function.h> // for unary_function and binary_function
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /// If we have found a result_type, extract it.
   template<typename _Functor, typename = __void_t<>>
@@ -390,7 +390,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 
   // @} group functors
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace std
 
 #endif // C++11

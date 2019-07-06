@@ -37,9 +37,9 @@
 # include <bits/node_handle.h>
 #endif
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   template<typename _Tp, typename _Hash>
     using __cache_default
@@ -159,7 +159,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
    *  Pattern" (CRTP) technique, but uses a reconstructed, not
    *  explicitly passed, template pattern.
    *
-   *  Base class templates are: 
+   *  Base class templates are:
    *    - __detail::_Hashtable_base
    *    - __detail::_Map_base
    *    - __detail::_Insert
@@ -1391,7 +1391,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 	{
 	  __x._M_buckets = _M_buckets;
 	  _M_buckets = &_M_single_bucket;
-	}	
+	}
       else
 	std::swap(_M_buckets, __x._M_buckets);
 
@@ -2213,7 +2213,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
   template<typename, typename, typename> class _Hash_merge_helper { };
 #endif // C++17
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace std
 
 #endif // _HASHTABLE_H

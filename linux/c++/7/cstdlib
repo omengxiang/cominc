@@ -120,9 +120,9 @@ namespace std
 
 extern "C++"
 {
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   using ::div_t;
   using ::ldiv_t;
@@ -178,7 +178,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #endif
 
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #if _GLIBCXX_USE_C99_STDLIB
@@ -192,9 +192,9 @@ _GLIBCXX_END_NAMESPACE_VERSION
 #undef strtof
 #undef strtold
 
-namespace __gnu_cxx _GLIBCXX_VISIBILITY(default)
+namespace __gnu_cxx (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
 #if !_GLIBCXX_USE_C99_LONG_LONG_DYNAMIC
   using ::lldiv_t;
@@ -231,7 +231,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
   using ::strtof;
   using ::strtold;
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace __gnu_cxx
 
 namespace std

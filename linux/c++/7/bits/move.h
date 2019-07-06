@@ -33,9 +33,9 @@
 #include <bits/c++config.h>
 #include <bits/concept_check.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   // Used, in C++03 mode too, by allocators, etc.
   /**
@@ -47,15 +47,15 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     __addressof(_Tp& __r) _GLIBCXX_NOEXCEPT
     { return __builtin_addressof(__r); }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #if __cplusplus >= 201103L
 #include <type_traits> // Brings in std::declval too.
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    *  @addtogroup utilities
@@ -153,7 +153,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     }
 
   /// @} group utilities
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #define _GLIBCXX_MOVE(__val) std::move(__val)
@@ -163,9 +163,9 @@ _GLIBCXX_END_NAMESPACE_VERSION
 #define _GLIBCXX_FORWARD(_Tp, __val) (__val)
 #endif
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    *  @addtogroup utilities
@@ -219,7 +219,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     }
 
   /// @} group utilities
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif /* _MOVE_H */

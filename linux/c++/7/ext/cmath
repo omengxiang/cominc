@@ -38,9 +38,9 @@
 #include <cmath>
 #include <type_traits>
 
-namespace __gnu_cxx _GLIBCXX_VISIBILITY(default)
+namespace __gnu_cxx (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   // A class for math constants.
   template<typename _RealType>
@@ -144,7 +144,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
   template<typename _RealType>
     constexpr _RealType __math_constants<_RealType>::__one_div_root_2;
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace __gnu_cxx
 
 #endif // C++11

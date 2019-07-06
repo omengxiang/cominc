@@ -68,9 +68,9 @@
 
 // See concept_check.h for the __glibcxx_*_requires macros.
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /// Swaps the median value of *__a, *__b and *__c under __comp to *__result
   template<typename _Iterator, typename _Compare>
@@ -302,7 +302,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 	  __tailSize -= __remainder;
 	  // __first here is always pointing to one past the last element of
 	  // next possible match.
-	  _RandomAccessIter __backTrack = __first; 
+	  _RandomAccessIter __backTrack = __first;
 	  while (__unary_pred(--__backTrack))
 	    {
 	      if (--__remainder == 0)
@@ -838,7 +838,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       __glibcxx_function_requires(_UnaryPredicateConcept<_Predicate,
 	    typename iterator_traits<_InputIterator>::value_type>)
       __glibcxx_requires_valid_range(__first, __last);
-      
+
       for (; __first != __last; ++__first)
 	if (__pred(*__first))
 	  {
@@ -1416,7 +1416,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
    *  @param  __last    A forward iterator.
    *  @return  first + (last - middle).
    *
-   *  Rotates the elements of the range @p [__first,__last) by 
+   *  Rotates the elements of the range @p [__first,__last) by
    *  @p (__middle - __first) positions so that the element at @p __middle
    *  is moved to @p __first, the element at @p __middle+1 is moved to
    *  @p __first+1 and so on for each element in the range
@@ -1456,13 +1456,13 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
    *  @return   An iterator designating the end of the resulting sequence.
    *
    *  Copies the elements of the range @p [__first,__last) to the
-   *  range beginning at @result, rotating the copied elements by 
+   *  range beginning at @result, rotating the copied elements by
    *  @p (__middle-__first) positions so that the element at @p __middle
    *  is moved to @p __result, the element at @p __middle+1 is moved
    *  to @p __result+1 and so on for each element in the range @p
    *  [__first,__last).
    *
-   *  Performs 
+   *  Performs
    *  @p *(__result+(n+(__last-__middle))%(__last-__first))=*(__first+n)
    *  for each @p n in the range @p [0,__last-__first).
   */
@@ -1699,7 +1699,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 	  ++__result_real_last;
 	  ++__first;
 	}
-      
+
       std::__make_heap(__result_first, __result_real_last, __comp);
       while (__first != __last)
 	{
@@ -2409,7 +2409,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     }
 
   /// This is a helper function for the merge routines.
-  template<typename _BidirectionalIterator, typename _Distance, 
+  template<typename _BidirectionalIterator, typename _Distance,
 	   typename _Pointer, typename _Compare>
     void
     __merge_adaptive(_BidirectionalIterator __first,
@@ -3392,7 +3392,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
    *  @ingroup sorting_algorithms
    *  @param  __first  Start of range.
    *  @param  __last   End of range.
-   *  @return  make_pair(m, M), where m is the first iterator i in 
+   *  @return  make_pair(m, M), where m is the first iterator i in
    *           [__first, __last) such that no other element in the range is
    *           smaller, and where M is the last iterator i in [__first, __last)
    *           such that no other element in the range is larger.
@@ -3420,7 +3420,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
    *  @param  __first  Start of range.
    *  @param  __last   End of range.
    *  @param  __comp   Comparison functor.
-   *  @return  make_pair(m, M), where m is the first iterator i in 
+   *  @return  make_pair(m, M), where m is the first iterator i in
    *           [__first, __last) such that no other element in the range is
    *           smaller, and where M is the last iterator i in [__first, __last)
    *           such that no other element in the range is larger.
@@ -3512,7 +3512,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 	  if (__scan != std::__find_if(__first1, __scan,
 			  __gnu_cxx::__ops::__iter_comp_iter(__pred, __scan)))
 	    continue; // We've seen this one before.
-	  
+
 	  auto __matches
 	    = std::__count_if(__first2, __last2,
 			__gnu_cxx::__ops::__iter_comp_iter(__pred, __scan));
@@ -3533,7 +3533,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
    *  @param  __last1   End of first range.
    *  @param  __first2  Start of second range.
    *  @return true if there exists a permutation of the elements in the range
-   *          [__first2, __first2 + (__last1 - __first1)), beginning with 
+   *          [__first2, __first2 + (__last1 - __first1)), beginning with
    *          ForwardIterator2 begin, such that equal(__first1, __last1, begin)
    *          returns true; otherwise, returns false.
   */
@@ -3857,7 +3857,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 
 #endif // C++11
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 
 _GLIBCXX_BEGIN_NAMESPACE_ALGO
 
@@ -4485,9 +4485,9 @@ _GLIBCXX_BEGIN_NAMESPACE_ALGO
    *
    *  _GLIBCXX_RESOLVE_LIB_DEFECTS
    *  DR 241. Does unique_copy() require CopyConstructible and Assignable?
-   *  
+   *
    *  _GLIBCXX_RESOLVE_LIB_DEFECTS
-   *  DR 538. 241 again: Does unique_copy() require CopyConstructible and 
+   *  DR 538. 241 again: Does unique_copy() require CopyConstructible and
    *  Assignable?
   */
   template<typename _InputIterator, typename _OutputIterator>
@@ -4815,7 +4815,7 @@ _GLIBCXX_BEGIN_NAMESPACE_ALGO
    *  @return  Nothing.
    *
    *  Sorts the elements in the range @p [__first,__last) in ascending order,
-   *  such that for each iterator @e i in the range @p [__first,__last-1),  
+   *  such that for each iterator @e i in the range @p [__first,__last-1),
    *  *(i+1)<*i is false.
    *
    *  The relative ordering of equivalent elements is not preserved, use
@@ -4928,7 +4928,7 @@ _GLIBCXX_BEGIN_NAMESPACE_ALGO
 	    typename iterator_traits<_InputIterator2>::value_type>)
       __glibcxx_function_requires(_LessThanOpConcept<
 	    typename iterator_traits<_InputIterator2>::value_type,
-	    typename iterator_traits<_InputIterator1>::value_type>)	
+	    typename iterator_traits<_InputIterator1>::value_type>)
       __glibcxx_requires_sorted_set(__first1, __last1, __first2);
       __glibcxx_requires_sorted_set(__first2, __last2, __first1);
       __glibcxx_requires_irreflexive2(__first1, __last1);
@@ -5384,7 +5384,7 @@ _GLIBCXX_BEGIN_NAMESPACE_ALGO
 	    typename iterator_traits<_InputIterator2>::value_type>)
       __glibcxx_function_requires(_LessThanOpConcept<
 	    typename iterator_traits<_InputIterator2>::value_type,
-	    typename iterator_traits<_InputIterator1>::value_type>)	
+	    typename iterator_traits<_InputIterator1>::value_type>)
       __glibcxx_requires_sorted_set(__first1, __last1, __first2);
       __glibcxx_requires_sorted_set(__first2, __last2, __first1);
       __glibcxx_requires_irreflexive2(__first1, __last1);
@@ -5474,7 +5474,7 @@ _GLIBCXX_BEGIN_NAMESPACE_ALGO
 	    ++__first1;
 	    ++__first2;
 	  }
-      return std::copy(__first2, __last2, 
+      return std::copy(__first2, __last2,
 		       std::copy(__first1, __last1, __result));
     }
 
@@ -5514,7 +5514,7 @@ _GLIBCXX_BEGIN_NAMESPACE_ALGO
 	    typename iterator_traits<_InputIterator2>::value_type>)
       __glibcxx_function_requires(_LessThanOpConcept<
 	    typename iterator_traits<_InputIterator2>::value_type,
-	    typename iterator_traits<_InputIterator1>::value_type>)	
+	    typename iterator_traits<_InputIterator1>::value_type>)
       __glibcxx_requires_sorted_set(__first1, __last1, __first2);
       __glibcxx_requires_sorted_set(__first2, __last2, __first1);
       __glibcxx_requires_irreflexive2(__first1, __last1);

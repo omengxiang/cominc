@@ -28,22 +28,22 @@
  *  Do not attempt to use it directly. @headername{regex}
  */
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
-_GLIBCXX_BEGIN_NAMESPACE_CXX11
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
+_GLIBCXX_BEGIN_NAMESPACE_CXX11;
   template<typename, typename>
     class basic_regex;
 
   template<typename, typename>
     class match_results;
 
-_GLIBCXX_END_NAMESPACE_CXX11
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_CXX11;
+_GLIBCXX_END_NAMESPACE_VERSION;
 
 namespace __detail
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   enum class _RegexExecutorPolicy : int
     { _S_auto, _S_alternate };
@@ -62,11 +62,11 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
   template<typename, typename, typename, bool>
     class _Executor;
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 }
 
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
-_GLIBCXX_BEGIN_NAMESPACE_CXX11
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
+_GLIBCXX_BEGIN_NAMESPACE_CXX11;
 
   /**
    * @addtogroup regex
@@ -866,7 +866,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CXX11
     class sub_match : public std::pair<_BiIter, _BiIter>
     {
       typedef iterator_traits<_BiIter>			__iter_traits;
-	
+
     public:
       typedef typename __iter_traits::value_type      	value_type;
       typedef typename __iter_traits::difference_type 	difference_type;
@@ -2001,7 +2001,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CXX11
 	 match_results<_Bi_iter, _Alloc>& __rhs)
     { __lhs.swap(__rhs); }
 
-_GLIBCXX_END_NAMESPACE_CXX11
+_GLIBCXX_END_NAMESPACE_CXX11;
 
   // [7.11.2] Function template regex_match
   /**
@@ -2471,7 +2471,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
 
   //@}
 
-_GLIBCXX_BEGIN_NAMESPACE_CXX11
+_GLIBCXX_BEGIN_NAMESPACE_CXX11;
 
   // std [28.12] Class template regex_iterator
   /**
@@ -2837,8 +2837,8 @@ _GLIBCXX_BEGIN_NAMESPACE_CXX11
 
   //@} // group regex
 
-_GLIBCXX_END_NAMESPACE_CXX11
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_CXX11;
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #include <bits/regex.tcc>

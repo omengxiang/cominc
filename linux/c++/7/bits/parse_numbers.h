@@ -38,9 +38,9 @@
 
 #include <limits>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
 namespace __parse_int
 {
@@ -287,7 +287,7 @@ namespace __select_int
 
 } // namespace __select_int
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace std
 
 #endif // __cplusplus > 201103L

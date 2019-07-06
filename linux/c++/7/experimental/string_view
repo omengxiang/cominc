@@ -41,13 +41,13 @@
 #include <limits>
 #include <experimental/bits/lfts_config.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace experimental
 {
 inline namespace fundamentals_v1
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
 #define __cpp_lib_experimental_string_view 201411
 
@@ -433,22 +433,22 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       const _CharT* _M_str;
     };
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 
   // [string.view.comparison], non-member basic_string_view comparison functions
 
   namespace __detail
   {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
     // Identity transform to create a non-deduced context, so that only one
     // argument participates in template argument deduction and the other
     // argument gets implicitly converted to the deduced type. See n3766.html.
     template<typename _Tp>
       using __idt = common_type_t<_Tp>;
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
   }
 
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   template<typename _CharT, typename _Traits>
     constexpr bool
@@ -577,14 +577,14 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
   using u32string_view = basic_string_view<char32_t>;
 #endif
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace fundamentals_v1
 } // namespace experimental
 
 
   // [string.view.hash], hash support:
 
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
   template<typename _Tp>
     struct hash;
 
@@ -646,7 +646,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     struct __is_fast_hash<hash<experimental::u32string_view>> : std::false_type
     { };
 #endif
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 
 namespace experimental
 {
@@ -655,7 +655,7 @@ namespace experimental
   {
   inline namespace string_view_literals
   {
-  _GLIBCXX_BEGIN_NAMESPACE_VERSION
+  _GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
     inline constexpr basic_string_view<char>
     operator""sv(const char* __str, size_t __len) noexcept
@@ -677,7 +677,7 @@ namespace experimental
     { return basic_string_view<char32_t>{__str, __len}; }
 #endif
 
-  _GLIBCXX_END_NAMESPACE_VERSION
+  _GLIBCXX_END_NAMESPACE_VERSION;
   } // namespace string_literals
   } // namespace literals
 } // namespace experimental

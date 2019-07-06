@@ -35,11 +35,11 @@
 
 #pragma GCC system_header
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace decimal
 {
-  _GLIBCXX_BEGIN_NAMESPACE_VERSION
+  _GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   // ISO/IEC TR 24733  3.2.[234].1  Construct/copy/destroy.
 
@@ -461,7 +461,7 @@ namespace decimal
 #undef _DEFINE_DECIMAL_COMPARISON_LHS
 #undef _DEFINE_DECIMAL_COMPARISON_RHS
 #undef _DEFINE_DECIMAL_COMPARISONS
-  _GLIBCXX_END_NAMESPACE_VERSION
+  _GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace decimal
 } // namespace std
 

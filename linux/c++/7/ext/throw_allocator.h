@@ -63,9 +63,9 @@
 # include <tr1/random>
 #endif
 
-namespace __gnu_cxx _GLIBCXX_VISIBILITY(default)
+namespace __gnu_cxx (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    *  @brief Thown by exception safety machinery.
@@ -387,7 +387,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       auto beg = __b.map_construct().begin();
       auto end = __b.map_construct().end();
       for (; beg != end; ++beg)
-	__b.log_to_string(error, *beg);      
+	__b.log_to_string(error, *beg);
     }
 #endif
     return os << error;
@@ -847,7 +847,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 	}
 
       template<typename _Up>
-        void 
+        void
         destroy(_Up* __p)
         {
 	  erase_construct(__p);
@@ -936,14 +936,14 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       ~throw_allocator_random() _GLIBCXX_USE_NOEXCEPT { }
     };
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #if __cplusplus >= 201103L
 
 # include <bits/functional_hash.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
   /// Explicit specialization of std::hash for __gnu_cxx::throw_value_limit.
   template<>

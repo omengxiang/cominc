@@ -62,9 +62,9 @@
 #include <type_traits> // for std::__decay_and_strip too
 #endif
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    *  @addtogroup utilities
@@ -537,7 +537,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 
   /// @}
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace std
 
 #endif /* _STL_PAIR_H */

@@ -35,9 +35,9 @@
 
 #include <libintl.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   // Non-virtual member functions.
   template<typename _CharT>
@@ -147,5 +147,5 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     messages<wchar_t>::do_close(catalog) const;
 #endif
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace

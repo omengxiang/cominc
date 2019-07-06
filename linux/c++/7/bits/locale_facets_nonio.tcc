@@ -32,9 +32,9 @@
 
 #pragma GCC system_header
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   template<typename _CharT, bool _Intl>
     struct __use_cache<__moneypunct_cache<_CharT, _Intl> >
@@ -78,7 +78,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       char* __grouping = 0;
       _CharT* __curr_symbol = 0;
       _CharT* __positive_sign = 0;
-      _CharT* __negative_sign = 0;     
+      _CharT* __negative_sign = 0;
       __try
 	{
 	  const string& __g = __mp.grouping();
@@ -138,10 +138,10 @@ _GLIBCXX_BEGIN_NAMESPACE_LDBL_OR_CXX11
 		 ios_base::iostate& __err, string& __units) const
       {
 	typedef char_traits<_CharT>			  __traits_type;
-	typedef typename string_type::size_type	          size_type;	
+	typedef typename string_type::size_type	          size_type;
 	typedef money_base::part			  part;
 	typedef __moneypunct_cache<_CharT, _Intl>         __cache_type;
-	
+
 	const locale& __loc = __io._M_getloc();
 	const ctype<_CharT>& __ctype = use_facet<ctype<_CharT> >(__loc);
 
@@ -237,14 +237,14 @@ _GLIBCXX_BEGIN_NAMESPACE_LDBL_OR_CXX11
 		for (; __beg != __end; ++__beg)
 		  {
 		    const char_type __c = *__beg;
-		    const char_type* __q = __traits_type::find(__lit_zero, 
+		    const char_type* __q = __traits_type::find(__lit_zero,
 							       10, __c);
 		    if (__q != 0)
 		      {
 			__res += money_base::_S_atoms[__q - __lit];
 			++__n;
 		      }
-		    else if (__c == __lc->_M_decimal_point 
+		    else if (__c == __lc->_M_decimal_point
 			     && !__testdecfound)
 		      {
 			if (__lc->_M_frac_digits <= 0)
@@ -299,7 +299,7 @@ _GLIBCXX_BEGIN_NAMESPACE_LDBL_OR_CXX11
 	    size_type __i = 1;
 	    for (; __beg != __end && __i < __sign_size
 		   && *__beg == __sign[__i]; ++__beg, (void)++__i);
-	    
+
 	    if (__i != __sign_size)
 	      __testvalid = false;
 	  }
@@ -318,7 +318,7 @@ _GLIBCXX_BEGIN_NAMESPACE_LDBL_OR_CXX11
 	    // 22.2.6.1.2, p4
 	    if (__negative && __res[0] != '0')
 	      __res.insert(__res.begin(), '-');
-	    
+
 	    // Test for grouping fidelity.
 	    if (__grouping_tmp.size())
 	      {
@@ -330,7 +330,7 @@ _GLIBCXX_BEGIN_NAMESPACE_LDBL_OR_CXX11
 					    __grouping_tmp))
 		  __err |= ios_base::failbit;
 	      }
-	    
+
 	    // Iff not enough digits were supplied after the decimal-point.
 	    if (__testdecfound && __n != __lc->_M_frac_digits)
 	      __testvalid = false;
@@ -341,7 +341,7 @@ _GLIBCXX_BEGIN_NAMESPACE_LDBL_OR_CXX11
 	  __err |= ios_base::failbit;
 	else
 	  __units.swap(__res);
-	
+
 	// Iff no more characters are available.
 	if (__beg == __end)
 	  __err |= ios_base::eofbit;
@@ -410,7 +410,7 @@ _GLIBCXX_BEGIN_NAMESPACE_LDBL_OR_CXX11
 	typedef typename string_type::size_type	          size_type;
 	typedef money_base::part                          part;
 	typedef __moneypunct_cache<_CharT, _Intl>         __cache_type;
-      
+
 	const locale& __loc = __io._M_getloc();
 	const ctype<_CharT>& __ctype = use_facet<ctype<_CharT> >(__loc);
 
@@ -439,7 +439,7 @@ _GLIBCXX_BEGIN_NAMESPACE_LDBL_OR_CXX11
 	    if (__digits.size())
 	      ++__beg;
 	  }
-       
+
 	// Look for valid numbers in the ctype facet within input digits.
 	size_type __len = __ctype.scan_not(ctype_base::digit, __beg,
 					   __beg + __digits.size()) - __beg;
@@ -461,7 +461,7 @@ _GLIBCXX_BEGIN_NAMESPACE_LDBL_OR_CXX11
   		if (__lc->_M_grouping_size)
   		  {
 		    __value.assign(2 * __paddec, char_type());
- 		    _CharT* __vend = 
+ 		    _CharT* __vend =
 		      std::__add_grouping(&__value[0], __lc->_M_thousands_sep,
 					  __lc->_M_grouping,
 					  __lc->_M_grouping_size,
@@ -485,9 +485,9 @@ _GLIBCXX_BEGIN_NAMESPACE_LDBL_OR_CXX11
 		    __value.append(__beg, __len);
 		  }
   	      }
-  
+
 	    // Calculate length of resulting string.
-	    const ios_base::fmtflags __f = __io.flags() 
+	    const ios_base::fmtflags __f = __io.flags()
 	                                   & ios_base::adjustfield;
 	    __len = __value.size() + __sign_size;
 	    __len += ((__io.flags() & ios_base::showbase)
@@ -495,8 +495,8 @@ _GLIBCXX_BEGIN_NAMESPACE_LDBL_OR_CXX11
 
 	    string_type __res;
 	    __res.reserve(2 * __len);
-	    
-	    const size_type __width = static_cast<size_type>(__io.width());  
+
+	    const size_type __width = static_cast<size_type>(__io.width());
 	    const bool __testipad = (__f == ios_base::internal
 				     && __len < __width);
 	    // Fit formatted digits into the required pattern.
@@ -535,11 +535,11 @@ _GLIBCXX_BEGIN_NAMESPACE_LDBL_OR_CXX11
 		    break;
 		  }
 	      }
-	    
+
 	    // Special case of multi-part sign parts.
 	    if (__sign_size > 1)
 	      __res.append(__sign + 1, __sign_size - 1);
-	    
+
 	    // Pad, if still necessary.
 	    __len = __res.size();
 	    if (__width > __len)
@@ -552,12 +552,12 @@ _GLIBCXX_BEGIN_NAMESPACE_LDBL_OR_CXX11
 		  __res.insert(0, __width - __len, __fill);
 		__len = __width;
 	      }
-	    
+
 	    // Write resulting, fully-formatted string to output iterator.
 	    __s = std::__write(__s, __res.data(), __len);
 	  }
 	__io.width(0);
-	return __s;    
+	return __s;
       }
 
 #if defined _GLIBCXX_LONG_DOUBLE_COMPAT && defined __LONG_DOUBLE_128__ \
@@ -599,7 +599,7 @@ _GLIBCXX_BEGIN_NAMESPACE_LDBL_OR_CXX11
       const int __cs_size =
 	__gnu_cxx::__numeric_traits<long double>::__max_exponent10 + 3;
       char* __cs = static_cast<char*>(__builtin_alloca(__cs_size));
-      int __len = std::__convert_from_v(_S_get_c_locale(), __cs, 0, "%.*Lf", 
+      int __len = std::__convert_from_v(_S_get_c_locale(), __cs, 0, "%.*Lf",
 					0, __units);
 #endif
       string_type __digits(__len, char_type());
@@ -696,7 +696,7 @@ _GLIBCXX_END_NAMESPACE_LDBL_OR_CXX11
 		  // Default time and date representation.
 		  const char_type*  __dt[2];
 		  __tp._M_date_time_formats(__dt);
-		  __beg = _M_extract_via_format(__beg, __end, __io, __tmperr, 
+		  __beg = _M_extract_via_format(__beg, __end, __io, __tmperr,
 						__tm, __dt[0]);
 		  break;
 		case 'd':
@@ -722,7 +722,7 @@ _GLIBCXX_END_NAMESPACE_LDBL_OR_CXX11
 		  // Equivalent to %m/%d/%y.[tm_mon, tm_mday, tm_year]
 		  __cs = "%m/%d/%y";
 		  __ctype.widen(__cs, __cs + 9, __wcs);
-		  __beg = _M_extract_via_format(__beg, __end, __io, __tmperr, 
+		  __beg = _M_extract_via_format(__beg, __end, __io, __tmperr,
 						__tm, __wcs);
 		  break;
 		case 'H':
@@ -741,7 +741,7 @@ _GLIBCXX_END_NAMESPACE_LDBL_OR_CXX11
 		  break;
 		case 'm':
 		  // Month [01, 12]. [tm_mon]
-		  __beg = _M_extract_num(__beg, __end, __mem, 1, 12, 2, 
+		  __beg = _M_extract_num(__beg, __end, __mem, 1, 12, 2,
 					 __io, __tmperr);
 		  if (!__tmperr)
 		    __tm->tm_mon = __mem - 1;
@@ -763,7 +763,7 @@ _GLIBCXX_END_NAMESPACE_LDBL_OR_CXX11
 		  // Equivalent to (%H:%M).
 		  __cs = "%H:%M";
 		  __ctype.widen(__cs, __cs + 6, __wcs);
-		  __beg = _M_extract_via_format(__beg, __end, __io, __tmperr, 
+		  __beg = _M_extract_via_format(__beg, __end, __io, __tmperr,
 						__tm, __wcs);
 		  break;
 		case 'S':
@@ -788,21 +788,21 @@ _GLIBCXX_END_NAMESPACE_LDBL_OR_CXX11
 		  // Equivalent to (%H:%M:%S).
 		  __cs = "%H:%M:%S";
 		  __ctype.widen(__cs, __cs + 9, __wcs);
-		  __beg = _M_extract_via_format(__beg, __end, __io, __tmperr, 
+		  __beg = _M_extract_via_format(__beg, __end, __io, __tmperr,
 						__tm, __wcs);
 		  break;
 		case 'x':
 		  // Locale's date.
 		  const char_type*  __dates[2];
 		  __tp._M_date_formats(__dates);
-		  __beg = _M_extract_via_format(__beg, __end, __io, __tmperr, 
+		  __beg = _M_extract_via_format(__beg, __end, __io, __tmperr,
 						__tm, __dates[0]);
 		  break;
 		case 'X':
 		  // Locale's time.
 		  const char_type*  __times[2];
 		  __tp._M_time_formats(__times);
-		  __beg = _M_extract_via_format(__beg, __end, __io, __tmperr, 
+		  __beg = _M_extract_via_format(__beg, __end, __io, __tmperr,
 						__tm, __times[0]);
 		  break;
 		case 'y':
@@ -811,7 +811,7 @@ _GLIBCXX_END_NAMESPACE_LDBL_OR_CXX11
 		case 'Y':
 		  // Year [1900).
 		  // NB: We parse either two digits, implicitly years since
-		  // 1900, or 4 digits, full year.  In both cases we can 
+		  // 1900, or 4 digits, full year.  In both cases we can
 		  // reconstruct [tm_year].  See also libstdc++/26701.
 		  __beg = _M_extract_num(__beg, __end, __mem, 0, 9999, 4,
 					 __io, __tmperr);
@@ -858,7 +858,7 @@ _GLIBCXX_END_NAMESPACE_LDBL_OR_CXX11
 
       if (__tmperr || __i != __len)
 	__err |= ios_base::failbit;
-  
+
       return __beg;
     }
 
@@ -1063,7 +1063,7 @@ _GLIBCXX_END_NAMESPACE_LDBL_OR_CXX11
       const __timepunct<_CharT>& __tp = use_facet<__timepunct<_CharT> >(__loc);
       const char_type*  __times[2];
       __tp._M_time_formats(__times);
-      __beg = _M_extract_via_format(__beg, __end, __io, __err, 
+      __beg = _M_extract_via_format(__beg, __end, __io, __err,
 				    __tm, __times[0]);
       if (__beg == __end)
 	__err |= ios_base::eofbit;
@@ -1080,7 +1080,7 @@ _GLIBCXX_END_NAMESPACE_LDBL_OR_CXX11
       const __timepunct<_CharT>& __tp = use_facet<__timepunct<_CharT> >(__loc);
       const char_type*  __dates[2];
       __tp._M_date_formats(__dates);
-      __beg = _M_extract_via_format(__beg, __end, __io, __err, 
+      __beg = _M_extract_via_format(__beg, __end, __io, __err,
 				    __tm, __dates[0]);
       if (__beg == __end)
 	__err |= ios_base::eofbit;
@@ -1501,7 +1501,7 @@ _GLIBCXX_END_NAMESPACE_LDBL_OR_CXX11
 #endif
 #endif
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace std
 
 #endif

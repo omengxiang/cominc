@@ -49,12 +49,12 @@
 #endif
 
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
 #if _GLIBCXX_USE_CXX11_ABI
-_GLIBCXX_BEGIN_NAMESPACE_CXX11
+_GLIBCXX_BEGIN_NAMESPACE_CXX11;
   /**
    *  @class basic_string basic_string.h <string>
    *  @brief  Managing sequences of characters and character-like objects.
@@ -418,7 +418,6 @@ _GLIBCXX_BEGIN_NAMESPACE_CXX11
        *  @brief  Default constructor creates an empty string.
        */
       basic_string()
-      _GLIBCXX_NOEXCEPT_IF(is_nothrow_default_constructible<_Alloc>::value)
       : _M_dataplus(_M_local_data())
       { _M_set_length(0); }
 
@@ -426,7 +425,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CXX11
        *  @brief  Construct an empty string using allocator @a a.
        */
       explicit
-      basic_string(const _Alloc& __a) _GLIBCXX_NOEXCEPT
+      basic_string(const _Alloc& __a)
       : _M_dataplus(_M_local_data(), __a)
       { _M_set_length(0); }
 
@@ -1014,7 +1013,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CXX11
       { _M_set_length(0); }
 
       /**
-       *  Returns true if the %string is empty.  Equivalent to 
+       *  Returns true if the %string is empty.  Equivalent to
        *  <code>*this == ""</code>.
        */
       bool
@@ -2267,7 +2266,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CXX11
        *  time.
       */
       void
-      swap(basic_string& __s) _GLIBCXX_NOEXCEPT;
+      swap(basic_string& __s) ;
 
       // String operations:
       /**
@@ -2325,7 +2324,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CXX11
       */
       size_type
       find(const _CharT* __s, size_type __pos, size_type __n) const
-      _GLIBCXX_NOEXCEPT;
+      ;
 
       /**
        *  @brief  Find position of a string.
@@ -2387,7 +2386,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CXX11
        *  found.  If not found, returns npos.
       */
       size_type
-      find(_CharT __c, size_type __pos = 0) const _GLIBCXX_NOEXCEPT;
+      find(_CharT __c, size_type __pos = 0) const ;
 
       /**
        *  @brief  Find last position of a string.
@@ -2435,7 +2434,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CXX11
       */
       size_type
       rfind(const _CharT* __s, size_type __pos, size_type __n) const
-      _GLIBCXX_NOEXCEPT;
+      ;
 
       /**
        *  @brief  Find last position of a C string.
@@ -2465,7 +2464,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CXX11
        *  found.  If not found, returns npos.
       */
       size_type
-      rfind(_CharT __c, size_type __pos = npos) const _GLIBCXX_NOEXCEPT;
+      rfind(_CharT __c, size_type __pos = npos) const ;
 
       /**
        *  @brief  Find position of a character of string.
@@ -2515,7 +2514,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CXX11
       */
       size_type
       find_first_of(const _CharT* __s, size_type __pos, size_type __n) const
-      _GLIBCXX_NOEXCEPT;
+      ;
 
       /**
        *  @brief  Find position of a character of C string.
@@ -2599,7 +2598,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CXX11
       */
       size_type
       find_last_of(const _CharT* __s, size_type __pos, size_type __n) const
-      _GLIBCXX_NOEXCEPT;
+      ;
 
       /**
        *  @brief  Find last position of a character of C string.
@@ -2682,7 +2681,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CXX11
       */
       size_type
       find_first_not_of(const _CharT* __s, size_type __pos,
-			size_type __n) const _GLIBCXX_NOEXCEPT;
+			size_type __n) const ;
 
       /**
        *  @brief  Find position of a character not in C string.
@@ -2714,7 +2713,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CXX11
       */
       size_type
       find_first_not_of(_CharT __c, size_type __pos = 0) const
-      _GLIBCXX_NOEXCEPT;
+      ;
 
       /**
        *  @brief  Find last position of a character not in string.
@@ -2764,7 +2763,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CXX11
       */
       size_type
       find_last_not_of(const _CharT* __s, size_type __pos,
-		       size_type __n) const _GLIBCXX_NOEXCEPT;
+		       size_type __n) const ;
       /**
        *  @brief  Find last position of a character not in C string.
        *  @param __s  C string containing characters to avoid.
@@ -2796,7 +2795,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CXX11
       */
       size_type
       find_last_not_of(_CharT __c, size_type __pos = npos) const
-      _GLIBCXX_NOEXCEPT;
+      ;
 
       /**
        *  @brief  Get a substring.
@@ -2967,7 +2966,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CXX11
        *  ordered first.
       */
       int
-      compare(const _CharT* __s) const _GLIBCXX_NOEXCEPT;
+      compare(const _CharT* __s) const ;
 
       // _GLIBCXX_RESOLVE_LIB_DEFECTS
       // 5 String::compare specification questionable
@@ -3024,7 +3023,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CXX11
       // Allow basic_stringbuf::__xfer_bufptrs to call _M_length:
       template<typename, typename, typename> friend class basic_stringbuf;
     };
-_GLIBCXX_END_NAMESPACE_CXX11
+_GLIBCXX_END_NAMESPACE_CXX11;
 #else  // !_GLIBCXX_USE_CXX11_ABI
   // Reference-counted COW string implentation
 
@@ -3161,7 +3160,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
 
         static _Rep&
         _S_empty_rep() _GLIBCXX_NOEXCEPT
-        { 
+        {
 	  // NB: Mild hack to avoid strict-aliasing warnings.  Note that
 	  // _S_empty_rep_storage is never modified and the punning should
 	  // be reasonably safe in this case.
@@ -3378,7 +3377,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
 	if (__n == 1)
 	  traits_type::assign(*__d, *__s);
 	else
-	  traits_type::move(__d, __s, __n);	  
+	  traits_type::move(__d, __s, __n);
       }
 
       static void
@@ -3387,7 +3386,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
 	if (__n == 1)
 	  traits_type::assign(*__d, __c);
 	else
-	  traits_type::assign(__d, __n, __c);	  
+	  traits_type::assign(__d, __n, __c);
       }
 
       // _S_copy_chars is a separate template to permit specialization
@@ -3634,7 +3633,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
        *  @param  __str  Source string.
        */
       basic_string&
-      operator=(const basic_string& __str) 
+      operator=(const basic_string& __str)
       { return this->assign(__str); }
 
       /**
@@ -3642,7 +3641,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
        *  @param  __s  Source null-terminated string.
        */
       basic_string&
-      operator=(const _CharT* __s) 
+      operator=(const _CharT* __s)
       { return this->assign(__s); }
 
       /**
@@ -3653,9 +3652,9 @@ _GLIBCXX_END_NAMESPACE_CXX11
        *  (*this)[0] == @a c.
        */
       basic_string&
-      operator=(_CharT __c) 
-      { 
-	this->assign(1, __c); 
+      operator=(_CharT __c)
+      {
+	this->assign(1, __c);
 	return *this;
       }
 
@@ -3931,7 +3930,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
 #endif
 
       /**
-       *  Returns true if the %string is empty.  Equivalent to 
+       *  Returns true if the %string is empty.  Equivalent to
        *  <code>*this == ""</code>.
        */
       bool
@@ -4094,7 +4093,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
        */
       basic_string&
       operator+=(_CharT __c)
-      { 
+      {
 	this->push_back(__c);
 	return *this;
       }
@@ -4241,7 +4240,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
        */
       void
       push_back(_CharT __c)
-      { 
+      {
 	const size_type __len = 1 + this->size();
 	if (__len > this->capacity() || _M_rep()->_M_is_shared())
 	  this->reserve(__len);
@@ -4620,7 +4619,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
       */
       basic_string&
       erase(size_type __pos = 0, size_type __n = npos)
-      { 
+      {
 	_M_mutate(_M_check(__pos, "basic_string::erase"),
 		  _M_limit(__pos, __n), size_type(0));
 	return *this;
@@ -4656,7 +4655,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
       */
       iterator
       erase(iterator __first, iterator __last);
- 
+
 #if __cplusplus >= 201103L
       /**
        *  @brief  Remove the last character.
@@ -5166,7 +5165,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
       */
       size_type
       find(const _CharT* __s, size_type __pos, size_type __n) const
-      _GLIBCXX_NOEXCEPT;
+      ;
 
       /**
        *  @brief  Find position of a string.
@@ -5211,7 +5210,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
        *  found.  If not found, returns npos.
       */
       size_type
-      find(_CharT __c, size_type __pos = 0) const _GLIBCXX_NOEXCEPT;
+      find(_CharT __c, size_type __pos = 0) const ;
 
 #if __cplusplus > 201402L
       /**
@@ -5259,7 +5258,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
       */
       size_type
       rfind(const _CharT* __s, size_type __pos, size_type __n) const
-      _GLIBCXX_NOEXCEPT;
+      ;
 
       /**
        *  @brief  Find last position of a C string.
@@ -5289,7 +5288,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
        *  found.  If not found, returns npos.
       */
       size_type
-      rfind(_CharT __c, size_type __pos = npos) const _GLIBCXX_NOEXCEPT;
+      rfind(_CharT __c, size_type __pos = npos) const ;
 
 #if __cplusplus > 201402L
       /**
@@ -5338,7 +5337,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
       */
       size_type
       find_first_of(const _CharT* __s, size_type __pos, size_type __n) const
-      _GLIBCXX_NOEXCEPT;
+      ;
 
       /**
        *  @brief  Find position of a character of C string.
@@ -5422,7 +5421,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
       */
       size_type
       find_last_of(const _CharT* __s, size_type __pos, size_type __n) const
-      _GLIBCXX_NOEXCEPT;
+      ;
 
       /**
        *  @brief  Find last position of a character of C string.
@@ -5505,7 +5504,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
       */
       size_type
       find_first_not_of(const _CharT* __s, size_type __pos,
-			size_type __n) const _GLIBCXX_NOEXCEPT;
+			size_type __n) const ;
 
       /**
        *  @brief  Find position of a character not in C string.
@@ -5537,7 +5536,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
       */
       size_type
       find_first_not_of(_CharT __c, size_type __pos = 0) const
-      _GLIBCXX_NOEXCEPT;
+      ;
 
 #if __cplusplus > 201402L
       /**
@@ -5587,7 +5586,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
       */
       size_type
       find_last_not_of(const _CharT* __s, size_type __pos,
-		       size_type __n) const _GLIBCXX_NOEXCEPT;
+		       size_type __n) const ;
       /**
        *  @brief  Find last position of a character not in C string.
        *  @param __s  C string containing characters to avoid.
@@ -5619,7 +5618,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
       */
       size_type
       find_last_not_of(_CharT __c, size_type __pos = npos) const
-      _GLIBCXX_NOEXCEPT;
+      ;
 
 #if __cplusplus > 201402L
       /**
@@ -5808,7 +5807,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
        *  ordered first.
       */
       int
-      compare(const _CharT* __s) const _GLIBCXX_NOEXCEPT;
+      compare(const _CharT* __s) const ;
 
       // _GLIBCXX_RESOLVE_LIB_DEFECTS
       // 5 String::compare specification questionable
@@ -6351,19 +6350,19 @@ _GLIBCXX_END_NAMESPACE_CXX11
     basic_istream<wchar_t>&
     getline(basic_istream<wchar_t>& __in, basic_string<wchar_t>& __str,
 	    wchar_t __delim);
-#endif  
+#endif
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #if __cplusplus >= 201103L
 
 #include <ext/string_conversions.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
-_GLIBCXX_BEGIN_NAMESPACE_CXX11
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
+_GLIBCXX_BEGIN_NAMESPACE_CXX11;
 
 #if _GLIBCXX_USE_C99_STDLIB
   // 21.4 Numeric Conversions [string.conversions].
@@ -6447,7 +6446,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CXX11
   inline string
   to_string(float __val)
   {
-    const int __n = 
+    const int __n =
       __gnu_cxx::__numeric_traits<float>::__max_exponent10 + 20;
     return __gnu_cxx::__to_xstring<string>(&std::vsnprintf, __n,
 					   "%f", __val);
@@ -6456,7 +6455,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CXX11
   inline string
   to_string(double __val)
   {
-    const int __n = 
+    const int __n =
       __gnu_cxx::__numeric_traits<double>::__max_exponent10 + 20;
     return __gnu_cxx::__to_xstring<string>(&std::vsnprintf, __n,
 					   "%f", __val);
@@ -6465,7 +6464,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CXX11
   inline string
   to_string(long double __val)
   {
-    const int __n = 
+    const int __n =
       __gnu_cxx::__numeric_traits<long double>::__max_exponent10 + 20;
     return __gnu_cxx::__to_xstring<string>(&std::vsnprintf, __n,
 					   "%Lf", __val);
@@ -6473,12 +6472,12 @@ _GLIBCXX_BEGIN_NAMESPACE_CXX11
 #endif // _GLIBCXX_USE_C99_STDIO
 
 #if defined(_GLIBCXX_USE_WCHAR_T) && _GLIBCXX_USE_C99_WCHAR
-  inline int 
+  inline int
   stoi(const wstring& __str, size_t* __idx = 0, int __base = 10)
   { return __gnu_cxx::__stoa<long, int>(&std::wcstol, "stoi", __str.c_str(),
 					__idx, __base); }
 
-  inline long 
+  inline long
   stol(const wstring& __str, size_t* __idx = 0, int __base = 10)
   { return __gnu_cxx::__stoa(&std::wcstol, "stol", __str.c_str(),
 			     __idx, __base); }
@@ -6576,8 +6575,8 @@ _GLIBCXX_BEGIN_NAMESPACE_CXX11
 #endif // _GLIBCXX_HAVE_BROKEN_VSWPRINTF
 #endif // _GLIBCXX_USE_WCHAR_T && _GLIBCXX_USE_C99_WCHAR
 
-_GLIBCXX_END_NAMESPACE_CXX11
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_CXX11;
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif /* C++11 */
@@ -6586,9 +6585,9 @@ _GLIBCXX_END_NAMESPACE_VERSION
 
 #include <bits/functional_hash.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   // DR 1182.
 
@@ -6657,7 +6656,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     { };
 #endif
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 
 #if __cplusplus > 201103L
 
@@ -6667,7 +6666,7 @@ _GLIBCXX_END_NAMESPACE_VERSION
   {
   inline namespace string_literals
   {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
     _GLIBCXX_DEFAULT_ABI_TAG
     inline basic_string<char>
@@ -6693,7 +6692,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     { return basic_string<char32_t>{__str, __len}; }
 #endif
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
   } // inline namespace string_literals
   } // inline namespace literals
 

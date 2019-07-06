@@ -33,9 +33,9 @@
 
 // Information as gleaned from /usr/include/ctype.h
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /// @brief  Base class for ctype.
   struct ctype_base
@@ -62,5 +62,5 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #endif
   };
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace

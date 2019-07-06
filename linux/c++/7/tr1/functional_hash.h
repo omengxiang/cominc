@@ -32,11 +32,11 @@
 
 #pragma GCC system_header
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace tr1
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /// Class template hash.
   // Declaration of default hash functor std::tr1::hash.  The types for
@@ -120,7 +120,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 	  return __result;
 	}
     };
-  
+
   template<>
     struct _Fnv_hash_base<8>
     {
@@ -193,7 +193,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     hash<const wstring&>::operator()(const wstring&) const;
 #endif
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 }
 }
 

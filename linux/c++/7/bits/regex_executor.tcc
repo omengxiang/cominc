@@ -28,11 +28,11 @@
  *  Do not attempt to use it directly. @headername{regex}
  */
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace __detail
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   template<typename _BiIter, typename _Alloc, typename _TraitsT,
 	   bool __dfs_mode>
@@ -514,6 +514,6 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       return __left_is_word != __right_is_word;
     }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace __detail
 } // namespace

@@ -38,9 +38,9 @@
 #include <bits/streambuf_iterator.h>
 #include <bits/move.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   template<typename _Facet>
     inline const _Facet&
@@ -53,7 +53,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 
   /**
    *  @brief Template class basic_ios, virtual base class for all
-   *  stream classes. 
+   *  stream classes.
    *  @ingroup io
    *
    *  @tparam _CharT  Type of character stream.
@@ -458,7 +458,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
        *  accessible to users.
       */
       basic_ios()
-      : ios_base(), _M_tie(0), _M_fill(char_type()), _M_fill_init(false), 
+      : ios_base(), _M_tie(0), _M_fill(char_type()), _M_fill_init(false),
 	_M_streambuf(0), _M_ctype(0), _M_num_put(0), _M_num_get(0)
       { }
 
@@ -510,7 +510,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       _M_cache_locale(const locale& __loc);
     };
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #include <bits/basic_ios.tcc>

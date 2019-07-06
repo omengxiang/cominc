@@ -70,9 +70,9 @@
 #include <bits/move.h> // For std::swap and _GLIBCXX_MOVE
 #include <bits/predefined_ops.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
 #if __cplusplus < 201103L
   // See http://gcc.gnu.org/ml/libstdc++/2004-08/msg00167.html: in a
@@ -97,7 +97,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     struct __iter_swap<true>
     {
       template<typename _ForwardIterator1, typename _ForwardIterator2>
-        static void 
+        static void
         iter_swap(_ForwardIterator1 __a, _ForwardIterator2 __b)
         {
           swap(*__a, *__b);
@@ -317,7 +317,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       template<typename _II, typename _OI>
         static _OI
         __copy_m(_II __first, _II __last, _OI __result)
-        { 
+        {
 	  typedef typename iterator_traits<_II>::difference_type _Distance;
 	  for(_Distance __n = __last - __first; __n > 0; --__n)
 	    {
@@ -336,7 +336,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       template<typename _II, typename _OI>
         static _OI
         __copy_m(_II __first, _II __last, _OI __result)
-        { 
+        {
 	  typedef typename iterator_traits<_II>::difference_type _Distance;
 	  for(_Distance __n = __last - __first; __n > 0; --__n)
 	    {
@@ -398,13 +398,13 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     class ostreambuf_iterator;
 
   template<bool _IsMove, typename _CharT>
-    typename __gnu_cxx::__enable_if<__is_char<_CharT>::__value, 
+    typename __gnu_cxx::__enable_if<__is_char<_CharT>::__value,
 	     ostreambuf_iterator<_CharT, char_traits<_CharT> > >::__type
     __copy_move_a2(_CharT*, _CharT*,
 		   ostreambuf_iterator<_CharT, char_traits<_CharT> >);
 
   template<bool _IsMove, typename _CharT>
-    typename __gnu_cxx::__enable_if<__is_char<_CharT>::__value, 
+    typename __gnu_cxx::__enable_if<__is_char<_CharT>::__value,
 	     ostreambuf_iterator<_CharT, char_traits<_CharT> > >::__type
     __copy_move_a2(const _CharT*, const _CharT*,
 		   ostreambuf_iterator<_CharT, char_traits<_CharT> >);
@@ -684,7 +684,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       for (; __first != __last; ++__first)
 	*__first = __value;
     }
-    
+
   template<typename _ForwardIterator, typename _Tp>
     inline typename
     __gnu_cxx::__enable_if<__is_scalar<_Tp>::__value, void>::__type
@@ -975,7 +975,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
    *  @param  __last    Another iterator.
    *  @param  __val     The search term.
    *  @return         An iterator pointing to the first element <em>not less
-   *                  than</em> @a val, or end() if every element is less than 
+   *                  than</em> @a val, or end() if every element is less than
    *                  @a val.
    *  @ingroup binary_search_algorithms
   */
@@ -1020,7 +1020,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
   __lg(unsigned long long __n)
   { return sizeof(long long) * __CHAR_BIT__ - 1 - __builtin_clzll(__n); }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 
 _GLIBCXX_BEGIN_NAMESPACE_ALGO
 
@@ -1415,7 +1415,7 @@ _GLIBCXX_END_NAMESPACE_ALGO
 
 // NB: This file is included within many other C++ includes, as a way
 // of getting the base algorithms. So, make sure that parallel bits
-// come in too if requested. 
+// come in too if requested.
 #ifdef _GLIBCXX_PARALLEL
 # include <parallel/algobase.h>
 #endif

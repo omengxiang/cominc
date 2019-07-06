@@ -41,9 +41,9 @@
 #include <bits/move.h>   // for swap
 #include <ios>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   // Generic declaration.
   template<typename _CharT>
@@ -124,7 +124,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       showmanyc();
     };
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif

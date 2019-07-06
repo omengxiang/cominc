@@ -28,7 +28,7 @@
 #ifndef _GLIBCXX_PROFILE_UNORDERED
 #define _GLIBCXX_PROFILE_UNORDERED 1
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace __profile
 {

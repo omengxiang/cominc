@@ -37,13 +37,13 @@
 #include <algorithm>
 #include <experimental/memory_resource>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace experimental
 {
 inline namespace fundamentals_v2
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   template<typename _CharT, typename _Traits, typename _Alloc,
 	   typename _Predicate>
@@ -62,11 +62,11 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 		   __cont.end());
     }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 
 #if _GLIBCXX_USE_CXX11_ABI
 namespace pmr {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   // basic_string using polymorphic allocator in namespace pmr
   template<typename _CharT, typename _Traits = char_traits<_CharT>>
@@ -80,7 +80,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
   typedef basic_string<char32_t> u32string;
   typedef basic_string<wchar_t> wstring;
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace pmr
 #endif
 } // namespace fundamentals_v2

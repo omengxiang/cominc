@@ -34,9 +34,9 @@
 
 #if __cplusplus >= 201103L
 #include <initializer_list>
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    *  @brief  Return an iterator pointing to the first element of
@@ -320,7 +320,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 
 #endif // C++17
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif // C++11

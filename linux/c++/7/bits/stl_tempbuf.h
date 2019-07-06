@@ -59,9 +59,9 @@
 #include <bits/stl_algobase.h>
 #include <bits/stl_construct.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    *  @brief Allocates a temporary buffer.
@@ -88,10 +88,10 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 	__gnu_cxx::__numeric_traits<ptrdiff_t>::__max / sizeof(_Tp);
       if (__len > __max)
 	__len = __max;
-      
-      while (__len > 0) 
+
+      while (__len > 0)
 	{
-	  _Tp* __tmp = static_cast<_Tp*>(::operator new(__len * sizeof(_Tp), 
+	  _Tp* __tmp = static_cast<_Tp*>(::operator new(__len * sizeof(_Tp),
 							std::nothrow));
 	  if (__tmp != 0)
 	    return std::pair<_Tp*, ptrdiff_t>(__tmp, __len);
@@ -264,7 +264,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 	}
     }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif /* _STL_TEMPBUF_H */

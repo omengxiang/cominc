@@ -63,9 +63,9 @@
 #include <tuple>
 #endif
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_CONTAINER
+_GLIBCXX_BEGIN_NAMESPACE_CONTAINER;
 
   template <typename _Key, typename _Tp, typename _Compare, typename _Alloc>
     class multimap;
@@ -1448,10 +1448,10 @@ _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
     _GLIBCXX_NOEXCEPT_IF(noexcept(__x.swap(__y)))
     { __x.swap(__y); }
 
-_GLIBCXX_END_NAMESPACE_CONTAINER
+_GLIBCXX_END_NAMESPACE_CONTAINER;
 
 #if __cplusplus > 201402L
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
   // Allow std::map access to internals of compatible maps.
   template<typename _Key, typename _Val, typename _Cmp1, typename _Alloc,
 	   typename _Cmp2>
@@ -1470,7 +1470,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       _S_get_tree(_GLIBCXX_STD_C::multimap<_Key, _Val, _Cmp2, _Alloc>& __map)
       { return __map._M_t; }
     };
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 #endif // C++17
 
 } // namespace std

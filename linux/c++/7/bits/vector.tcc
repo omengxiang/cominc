@@ -56,9 +56,9 @@
 #ifndef _VECTOR_TCC
 #define _VECTOR_TCC 1
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_CONTAINER
+_GLIBCXX_BEGIN_NAMESPACE_CONTAINER;
 
   template<typename _Tp, typename _Alloc>
     void
@@ -738,7 +738,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
 	}
       else
 	{
-	  const size_type __len = 
+	  const size_type __len =
 	    _M_check_len(__n, "vector<bool>::_M_fill_insert");
 	  _Bit_pointer __q = this->_M_allocate(__len);
 	  iterator __start(std::__addressof(*__q), 0);
@@ -757,7 +757,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
     template<typename _ForwardIterator>
       void
       vector<bool, _Alloc>::
-      _M_insert_range(iterator __position, _ForwardIterator __first, 
+      _M_insert_range(iterator __position, _ForwardIterator __first,
 		      _ForwardIterator __last, std::forward_iterator_tag)
       {
 	if (__first != __last)
@@ -795,7 +795,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
     {
       if (this->_M_impl._M_finish._M_p != this->_M_impl._M_end_addr())
 	{
-	  std::copy_backward(__position, this->_M_impl._M_finish, 
+	  std::copy_backward(__position, this->_M_impl._M_finish,
 			     this->_M_impl._M_finish + 1);
 	  *__position = __x;
 	  ++this->_M_impl._M_finish;
@@ -855,14 +855,14 @@ _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
     }
 #endif
 
-_GLIBCXX_END_NAMESPACE_CONTAINER
+_GLIBCXX_END_NAMESPACE_CONTAINER;
 } // namespace std
 
 #if __cplusplus >= 201103L
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   template<typename _Alloc>
     size_t
@@ -897,7 +897,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       return __hash;
     }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace std
 
 #endif // C++11

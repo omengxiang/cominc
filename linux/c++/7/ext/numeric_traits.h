@@ -34,9 +34,9 @@
 #include <bits/cpp_type_traits.h>
 #include <ext/type_traits.h>
 
-namespace __gnu_cxx _GLIBCXX_VISIBILITY(default)
+namespace __gnu_cxx (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   // Compile time constants for builtin types.
   // Sadly std::numeric_limits member functions cannot be used for this.
@@ -61,7 +61,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       // NB: these two also available in std::numeric_limits as compile
       // time constants, but <limits> is big and we avoid including it.
       static const bool __is_signed = __glibcxx_signed(_Value);
-      static const int __digits = __glibcxx_digits(_Value);      
+      static const int __digits = __glibcxx_digits(_Value);
     };
 
   template<typename _Value>
@@ -99,7 +99,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
   template<typename _Value>
     struct __numeric_traits_floating
     {
-      // Only floating point types. See N1822. 
+      // Only floating point types. See N1822.
       static const int __max_digits10 = __glibcxx_max_digits10(_Value);
 
       // See above comment...
@@ -127,7 +127,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 				__numeric_traits_floating<_Value> >::__type
     { };
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #undef __glibcxx_floating
@@ -135,4 +135,4 @@ _GLIBCXX_END_NAMESPACE_VERSION
 #undef __glibcxx_digits10
 #undef __glibcxx_max_exponent10
 
-#endif 
+#endif

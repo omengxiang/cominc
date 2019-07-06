@@ -57,9 +57,9 @@
 #include <bits/stl_function.h>
 #include <ext/aligned_buffer.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
 #if _GLIBCXX_USE_DEPRECATED
   template<typename> class auto_ptr;
@@ -1860,7 +1860,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       }
     };
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif // _SHARED_PTR_BASE_H

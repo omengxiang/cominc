@@ -31,7 +31,7 @@
 
 #include <ext/type_traits.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace __profile
 {
@@ -280,7 +280,7 @@ namespace __profile
 	      const __iterator_tracker<_Iterator, _Sequence>& __i)
     _GLIBCXX_NOEXCEPT
     { return __i + __n; }
-	
+
 }  // namespace __profile
 }  // namespace std
 #endif

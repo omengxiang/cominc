@@ -36,9 +36,9 @@
 
 #include <bits/slice_array.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   //
   // Implementing a loosened valarray return value is tricky.
@@ -488,7 +488,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       { return _Oper()(_M_expr[__i]); }
 
       size_t size() const { return _M_expr.size(); }
-      
+
     private:
       const _Arg& _M_expr;
     };
@@ -671,19 +671,19 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     //
     // slice_array closure.
     //
-  template<typename _Dom> 
+  template<typename _Dom>
     class _SBase
     {
     public:
       typedef typename _Dom::value_type value_type;
-      
+
       _SBase (const _Dom& __e, const slice& __s)
       : _M_expr (__e), _M_slice (__s) {}
-        
+
       value_type
       operator[] (size_t __i) const
       { return _M_expr[_M_slice.start () + __i * _M_slice.stride ()]; }
-        
+
       size_t
       size() const
       { return _M_slice.size (); }
@@ -698,15 +698,15 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     {
     public:
       typedef _Tp value_type;
-      
+
       _SBase (_Array<_Tp> __a, const slice& __s)
       : _M_array (__a._M_data+__s.start()), _M_size (__s.size()),
 	_M_stride (__s.stride()) {}
-        
+
       value_type
       operator[] (size_t __i) const
       { return _M_array._M_data[__i * _M_stride]; }
-      
+
       size_t
       size() const
       { return _M_size; }
@@ -723,7 +723,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     {
       typedef _SBase<_Dom> _Base;
       typedef typename _Base::value_type value_type;
-      
+
       _SClos (const _Dom& __e, const slice& __s) : _Base (__e, __s) {}
     };
 
@@ -733,11 +733,11 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     {
       typedef  _SBase<_Array<_Tp> > _Base;
       typedef _Tp value_type;
-      
+
       _SClos (_Array<_Tp> __a, const slice& __s) : _Base (__a, __s) {}
     };
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif /* _CPP_VALARRAY_BEFORE_H */

@@ -2,7 +2,6 @@
 #define Py_ASDL_H
 
 typedef PyObject * identifier;
-typedef PyObject * string;
 typedef PyObject * object;
 
 #ifndef __cplusplus

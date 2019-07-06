@@ -39,7 +39,7 @@
 #ifndef _GLIBCXX_TR1_POLY_HERMITE_TCC
 #define _GLIBCXX_TR1_POLY_HERMITE_TCC 1
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 #if _GLIBCXX_USE_STD_SPEC_FUNCS
 #elif defined(_GLIBCXX_TR1_CMATH)
@@ -53,12 +53,12 @@ namespace tr1
   // Implementation-space details.
   namespace __detail
   {
-  _GLIBCXX_BEGIN_NAMESPACE_VERSION
+  _GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
     /**
      *   @brief This routine returns the Hermite polynomial
      *          of order n: \f$ H_n(x) \f$ by recursion on n.
-     * 
+     *
      *   The Hermite polynomial is defined by:
      *   @f[
      *     H_n(x) = (-1)^n e^{x^2} \frac{d^n}{dx^n} e^{-x^2}
@@ -100,7 +100,7 @@ namespace tr1
     /**
      *   @brief This routine returns the Hermite polynomial
      *          of order n: \f$ H_n(x) \f$.
-     * 
+     *
      *   The Hermite polynomial is defined by:
      *   @f[
      *     H_n(x) = (-1)^n e^{x^2} \frac{d^n}{dx^n} e^{-x^2}
@@ -121,7 +121,7 @@ namespace tr1
         return __poly_hermite_recursion(__n, __x);
     }
 
-  _GLIBCXX_END_NAMESPACE_VERSION
+  _GLIBCXX_END_NAMESPACE_VERSION;
   } // namespace __detail
 #if ! _GLIBCXX_USE_STD_SPEC_FUNCS && defined(_GLIBCXX_TR1_CMATH)
 } // namespace tr1

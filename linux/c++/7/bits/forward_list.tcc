@@ -30,9 +30,9 @@
 #ifndef _FORWARD_LIST_TCC
 #define _FORWARD_LIST_TCC 1
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_CONTAINER
+_GLIBCXX_BEGIN_NAMESPACE_CONTAINER;
 
   template<typename _Tp, typename _Alloc>
     _Fwd_list_base<_Tp, _Alloc>::
@@ -79,7 +79,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
   template<typename _Tp, typename _Alloc>
     _Fwd_list_node_base*
     _Fwd_list_base<_Tp, _Alloc>::
-    _M_erase_after(_Fwd_list_node_base* __pos, 
+    _M_erase_after(_Fwd_list_node_base* __pos,
                    _Fwd_list_node_base* __last)
     {
       _Node* __curr = static_cast<_Node*>(__pos->_M_next);
@@ -232,7 +232,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
 	__end = __end->_M_next;
 
       if (__b != __end)
-	return iterator(__tmp->_M_transfer_after(__b, __end));      
+	return iterator(__tmp->_M_transfer_after(__b, __end));
       else
 	return iterator(__tmp);
     }
@@ -491,8 +491,8 @@ _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
             __insize *= 2;
           }
       }
- 
-_GLIBCXX_END_NAMESPACE_CONTAINER
+
+_GLIBCXX_END_NAMESPACE_CONTAINER;
 } // namespace std
 
 #endif /* _FORWARD_LIST_TCC */

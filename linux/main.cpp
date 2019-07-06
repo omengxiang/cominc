@@ -9,7 +9,7 @@ int main()
     obVec.resize(12);
 
     string obStr("nihao");
-
+    obStr.c_str();
 
     return 0;
 }

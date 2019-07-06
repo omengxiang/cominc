@@ -40,9 +40,9 @@
 #include "codecvt.h"
 #include "unique_ptr.h"
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    * @addtogroup locales
@@ -160,7 +160,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 
 #ifdef _GLIBCXX_USE_WCHAR_T
 
-_GLIBCXX_BEGIN_NAMESPACE_CXX11
+_GLIBCXX_BEGIN_NAMESPACE_CXX11;
 
   /// String conversions
   template<typename _Codecvt, typename _Elem = wchar_t,
@@ -313,7 +313,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CXX11
       bool			_M_with_strings = false;
     };
 
-_GLIBCXX_END_NAMESPACE_CXX11
+_GLIBCXX_END_NAMESPACE_CXX11;
 
   /// Buffer conversions
   template<typename _Codecvt, typename _Elem = wchar_t,
@@ -541,7 +541,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
 
   /// @} group locales
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif // __cplusplus

@@ -44,9 +44,9 @@
 #include <bits/refwrap.h>
 #include <bits/functexcept.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    * Derives from @c unary_function or @c binary_function, or perhaps
@@ -803,7 +803,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     swap(function<_Res(_Args...)>& __x, function<_Res(_Args...)>& __y) noexcept
     { __x.swap(__y); }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace std
 
 #endif // C++11

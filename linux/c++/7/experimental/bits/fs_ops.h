@@ -36,7 +36,7 @@
 
 #include <cstdint>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace experimental
 {
@@ -44,7 +44,7 @@ namespace filesystem
 {
 inline namespace v1
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    * @ingroup filesystem
@@ -289,7 +289,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
   path temp_directory_path(error_code& __ec);
 
   // @} group filesystem
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace v1
 } // namespace filesystem
 } // namespace experimental

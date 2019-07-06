@@ -58,7 +58,7 @@
 #include <parallel/unique_copy.h>
 #include <parallel/set_operations.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace __parallel
 {

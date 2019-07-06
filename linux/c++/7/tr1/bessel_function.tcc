@@ -48,7 +48,7 @@
 
 #include "special_function_util.h"
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 #if _GLIBCXX_USE_STD_SPEC_FUNCS
 # define _GLIBCXX_MATH_NS ::std
@@ -64,7 +64,7 @@ namespace tr1
   // Implementation-space details.
   namespace __detail
   {
-  _GLIBCXX_BEGIN_NAMESPACE_VERSION
+  _GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
     /**
      *   @brief Compute the gamma functions required by the Temme series
@@ -82,7 +82,7 @@ namespace tr1
      *   is the nearest integer to @f$ \nu @f$.
      *   The values of \f$ \Gamma(1 + \mu) \f$ and \f$ \Gamma(1 - \mu) \f$
      *   are returned as well.
-     * 
+     *
      *   The accuracy requirements on this are exquisite.
      *
      *   @param __mu     The input parameter of the gamma functions.
@@ -250,7 +250,7 @@ namespace tr1
               __p /= _Tp(__i) - __mu;
               __q /= _Tp(__i) + __mu;
               const _Tp __del = __c * (__ff + __r * __q);
-              __sum += __del; 
+              __sum += __del;
               const _Tp __del1 = __c * __p - __i * __del;
               __sum1 += __del1;
               if ( std::abs(__del) < __eps * (_Tp(1) + std::abs(__sum)) )
@@ -395,7 +395,7 @@ namespace tr1
      *   @f]
      *   where \f$ \sigma = +1 \f$ or\f$  -1 \f$ for
      *   \f$ Z = I \f$ or \f$ J \f$ respectively.
-     * 
+     *
      *   See Abramowitz & Stegun, 9.1.10
      *       Abramowitz & Stegun, 9.6.7
      *    (1) Handbook of Mathematical Functions,
@@ -627,7 +627,7 @@ namespace tr1
         }
     }
 
-  _GLIBCXX_END_NAMESPACE_VERSION
+  _GLIBCXX_END_NAMESPACE_VERSION;
   } // namespace __detail
 #undef _GLIBCXX_MATH_NS
 #if ! _GLIBCXX_USE_STD_SPEC_FUNCS && defined(_GLIBCXX_TR1_CMATH)

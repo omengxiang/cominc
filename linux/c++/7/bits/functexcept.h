@@ -39,9 +39,9 @@
 #include <bits/c++config.h>
 #include <bits/exception_defines.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   // Helper for exception objects in <except>
   void
@@ -104,7 +104,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
   void
   __throw_bad_function_call() __attribute__((__noreturn__));
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif

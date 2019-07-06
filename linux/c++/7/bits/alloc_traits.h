@@ -38,9 +38,9 @@
 
 #define __cpp_lib_allocator_traits_is_always_equal 201411
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   struct __allocator_traits_base
   {
@@ -598,7 +598,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     : is_copy_constructible<_Tp>
     { };
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace std
 
 #endif

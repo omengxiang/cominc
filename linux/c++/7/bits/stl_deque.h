@@ -65,9 +65,9 @@
 
 #include <debug/assertions.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_CONTAINER
+_GLIBCXX_BEGIN_NAMESPACE_CONTAINER;
 
   /**
    *  @brief This function controls the size of memory nodes.
@@ -538,7 +538,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
       }
 #endif
 
-      ~_Deque_base() _GLIBCXX_NOEXCEPT;
+      ~_Deque_base() ;
 
     protected:
       typedef typename iterator::_Map_pointer _Map_pointer;
@@ -627,7 +627,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
       void _M_initialize_map(size_t);
       void _M_create_nodes(_Map_pointer __nstart, _Map_pointer __nfinish);
       void _M_destroy_nodes(_Map_pointer __nstart,
-			    _Map_pointer __nfinish) _GLIBCXX_NOEXCEPT;
+			    _Map_pointer __nfinish) ;
       enum { _S_initial_map_size = 8 };
 
       _Deque_impl _M_impl;
@@ -2315,7 +2315,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
 
 #undef _GLIBCXX_DEQUE_BUF_SIZE
 
-_GLIBCXX_END_NAMESPACE_CONTAINER
+_GLIBCXX_END_NAMESPACE_CONTAINER;
 } // namespace std
 
 #endif /* _STL_DEQUE_H */

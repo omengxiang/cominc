@@ -39,7 +39,7 @@
  * @namespace std::__profile
  * @brief GNU profile code, replaces standard behavior with profile behavior.
  */
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
   namespace __profile { }
 }

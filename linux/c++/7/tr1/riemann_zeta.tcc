@@ -44,7 +44,7 @@
 
 #include "special_function_util.h"
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 #if _GLIBCXX_USE_STD_SPEC_FUNCS
 # define _GLIBCXX_MATH_NS ::std
@@ -60,12 +60,12 @@ namespace tr1
   // Implementation-space details.
   namespace __detail
   {
-  _GLIBCXX_BEGIN_NAMESPACE_VERSION
+  _GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
     /**
      *   @brief  Compute the Riemann zeta function @f$ \zeta(s) @f$
      *           by summation for s > 1.
-     * 
+     *
      *   The Riemann zeta function is defined by:
      *    \f[
      *      \zeta(s) = \sum_{k=1}^{\infty} \frac{1}{k^{s}} for s > 1
@@ -102,7 +102,7 @@ namespace tr1
     /**
      *   @brief  Evaluate the Riemann zeta function @f$ \zeta(s) @f$
      *           by an alternate series for s > 0.
-     * 
+     *
      *   The Riemann zeta function is defined by:
      *    \f[
      *      \zeta(s) = \sum_{k=1}^{\infty} \frac{1}{k^{s}} for s > 1
@@ -239,7 +239,7 @@ namespace tr1
      *      \zeta(s) = \Pi_{i=1}^\infty \frac{1}{1 - p_i^{-s}}
      *    \f]
      *    where @f$ {p_i} @f$ are the prime numbers.
-     * 
+     *
      *   The Riemann zeta function is defined by:
      *    \f[
      *      \zeta(s) = \sum_{k=1}^{\infty} \frac{1}{k^{s}} for s > 1
@@ -278,7 +278,7 @@ namespace tr1
 
     /**
      *   @brief  Return the Riemann zeta function @f$ \zeta(s) @f$.
-     * 
+     *
      *   The Riemann zeta function is defined by:
      *    \f[
      *      \zeta(s) = \sum_{k=1}^{\infty} k^{-s} for s > 1
@@ -344,7 +344,7 @@ namespace tr1
     /**
      *   @brief  Return the Hurwitz zeta function @f$ \zeta(x,s) @f$
      *           for all s != 1 and x > -1.
-     * 
+     *
      *   The Hurwitz zeta function is defined by:
      *   @f[
      *     \zeta(x,s) = \sum_{n=0}^{\infty} \frac{1}{(n + x)^s}
@@ -353,7 +353,7 @@ namespace tr1
      *   @f[
      *     \zeta(s) = \zeta(1,s)
      *   @f]
-     * 
+     *
      *   This functions uses the double sum that converges for s != 1
      *   and x > -1:
      *   @f[
@@ -417,7 +417,7 @@ namespace tr1
     /**
      *   @brief  Return the Hurwitz zeta function @f$ \zeta(x,s) @f$
      *           for all s != 1 and x > -1.
-     * 
+     *
      *   The Hurwitz zeta function is defined by:
      *   @f[
      *     \zeta(x,s) = \sum_{n=0}^{\infty} \frac{1}{(n + x)^s}
@@ -432,7 +432,7 @@ namespace tr1
     __hurwitz_zeta(_Tp __a, _Tp __s)
     { return __hurwitz_zeta_glob(__a, __s); }
 
-  _GLIBCXX_END_NAMESPACE_VERSION
+  _GLIBCXX_END_NAMESPACE_VERSION;
   } // namespace __detail
 #undef _GLIBCXX_MATH_NS
 #if ! _GLIBCXX_USE_STD_SPEC_FUNCS && defined(_GLIBCXX_TR1_CMATH)

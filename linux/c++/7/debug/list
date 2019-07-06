@@ -36,7 +36,7 @@
 #include <debug/safe_container.h>
 #include <debug/safe_iterator.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace __debug
 {

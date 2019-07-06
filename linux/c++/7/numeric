@@ -77,11 +77,11 @@
 #if __cplusplus >= 201402L
 #include <type_traits>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace __detail
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   // std::abs is not constexpr and doesn't support unsigned integers.
   template<typename _Tp>
@@ -118,10 +118,10 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 	: 0;
     }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 }
 
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
 #if __cplusplus > 201402L
 
@@ -156,7 +156,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 
 #endif // C++17
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace std
 
 #endif // C++14

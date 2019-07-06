@@ -28,7 +28,7 @@
 #ifndef _GLIBCXX_PROFILE_ORDERED
 #define _GLIBCXX_PROFILE_ORDERED 1
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace __profile
 {
@@ -62,7 +62,7 @@ namespace __profile
       operator=(_Ordered_profile&& __other) noexcept
       {
 	_M_swap(__other);
-	
+
 	__other._M_profile_destruct();
 	__other._M_profile_construct();
       }

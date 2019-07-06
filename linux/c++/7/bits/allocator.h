@@ -54,9 +54,9 @@
 # define __cpp_lib_allocator_is_always_equal 201411
 #endif
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    *  @addtogroup allocators
@@ -241,7 +241,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     };
 #endif
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace std
 
 #endif

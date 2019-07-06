@@ -43,9 +43,9 @@
 #include <cstdio>
 #include <cerrno>
 
-namespace __gnu_cxx _GLIBCXX_VISIBILITY(default)
+namespace __gnu_cxx (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   // Helper for all the sto* functions.
   template<typename _TRet, typename _Ret = _TRet, typename _CharT,
@@ -115,7 +115,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       return _String(__s, __s + __len);
     }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif // C++11

@@ -32,9 +32,9 @@
 
 #include <bits/atomic_base.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    * @addtogroup pointer_abstractions
@@ -324,7 +324,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 
   // @} group pointer_abstractions
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif // _SHARED_PTR_ATOMIC_H

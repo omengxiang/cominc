@@ -38,9 +38,9 @@
 
 #include <bits/cxxabi_forced.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   template<typename _CharT, typename _Traits>
     basic_istream<_CharT, _Traits>::sentry::
@@ -187,7 +187,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 		}
 	      else if (__l > __gnu_cxx::__numeric_traits<int>::__max)
 		{
-		  __err |= ios_base::failbit;	      
+		  __err |= ios_base::failbit;
 		  __n = __gnu_cxx::__numeric_traits<int>::__max;
 		}
 	      else
@@ -867,7 +867,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 		  // 136.  seekp, seekg setting wrong streams?
 		  const pos_type __p = this->rdbuf()->pubseekpos(__pos,
 								 ios_base::in);
-		  
+
 		  // 129.  Need error indication from seekp() and seekg()
 		  if (__p == pos_type(off_type(-1)))
 		    __err |= ios_base::failbit;
@@ -906,7 +906,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 		  // 136.  seekp, seekg setting wrong streams?
 		  const pos_type __p = this->rdbuf()->pubseekoff(__off, __dir,
 								 ios_base::in);
-	      
+
 		  // 129.  Need error indication from seekp() and seekg()
 		  if (__p == pos_type(off_type(-1)))
 		    __err |= ios_base::failbit;
@@ -1055,7 +1055,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
   extern template istream& operator>>(istream&, signed char*);
 
   extern template istream& istream::_M_extract(unsigned short&);
-  extern template istream& istream::_M_extract(unsigned int&);  
+  extern template istream& istream::_M_extract(unsigned int&);
   extern template istream& istream::_M_extract(long&);
   extern template istream& istream::_M_extract(unsigned long&);
   extern template istream& istream::_M_extract(bool&);
@@ -1077,7 +1077,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
   extern template wistream& operator>>(wistream&, wchar_t*);
 
   extern template wistream& wistream::_M_extract(unsigned short&);
-  extern template wistream& wistream::_M_extract(unsigned int&);  
+  extern template wistream& wistream::_M_extract(unsigned int&);
   extern template wistream& wistream::_M_extract(long&);
   extern template wistream& wistream::_M_extract(unsigned long&);
   extern template wistream& wistream::_M_extract(bool&);
@@ -1094,7 +1094,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #endif
 #endif
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace std
 
 #endif

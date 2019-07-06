@@ -34,9 +34,9 @@
 
 #include <bits/move.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   class __undefined;
 
@@ -146,7 +146,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
   template<typename _Ptr, typename _Tp>
     using __ptr_rebind = typename pointer_traits<_Ptr>::template rebind<_Tp>;
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace std
 
 #endif

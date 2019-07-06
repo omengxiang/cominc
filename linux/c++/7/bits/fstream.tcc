@@ -39,9 +39,9 @@
 #include <bits/cxxabi_forced.h>
 #include <bits/move.h>   // for swap
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   template<typename _CharT, typename _Traits>
     void
@@ -80,7 +80,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     basic_filebuf() : __streambuf_type(), _M_lock(), _M_file(&_M_lock),
     _M_mode(ios_base::openmode(0)), _M_state_beg(), _M_state_cur(),
     _M_state_last(), _M_buf(0), _M_buf_size(BUFSIZ),
-    _M_buf_allocated(false), _M_reading(false), _M_writing(false), _M_pback(), 
+    _M_buf_allocated(false), _M_reading(false), _M_writing(false), _M_pback(),
     _M_pback_cur_save(0), _M_pback_end_save(0), _M_pback_init(false),
     _M_codecvt(0), _M_ext_buf(0), _M_ext_buf_size(0), _M_ext_next(0),
     _M_ext_end(0)
@@ -603,7 +603,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 	  else
 	    __throw_ios_failure(__N("basic_filebuf::_M_convert_to_external "
 				    "conversion error"));
-  
+
 	  __elen = _M_file.xsputn(__buf, __blen);
 	  __plen = __blen;
 
@@ -654,13 +654,13 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
  	  _M_set_buffer(-1);
  	  _M_writing = false;
  	}
- 
+
       // Optimization in the always_noconv() case, to be generalized in the
       // future: when __n > __buflen we read directly instead of using the
       // buffer repeatedly.
       const bool __testin = _M_mode & ios_base::in;
       const streamsize __buflen = _M_buf_size > 1 ? _M_buf_size - 1 : 1;
- 
+
       if (__n > __buflen && __check_facet(_M_codecvt).always_noconv()
  	   && __testin)
  	 {
@@ -675,7 +675,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 	       __ret += __avail;
 	       __n -= __avail;
  	     }
- 
+
  	   // Need to loop in case of short reads (relatively common
  	   // with pipes).
  	   streamsize __len;
@@ -688,15 +688,15 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
  					 "error reading the file"));
  	       if (__len == 0)
  		 break;
- 
+
  	       __n -= __len;
  	       __ret += __len;
  	       if (__n == 0)
  		 break;
- 
+
  	       __s += __len;
  	     }
- 
+
  	   if (__n == 0)
  	     {
 	       // Set _M_reading. Buffer is already in initial 'read' mode.
@@ -713,7 +713,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
  	 }
       else
  	 __ret += __streambuf_type::xsgetn(__s, __n);
- 
+
       return __ret;
     }
 
@@ -838,7 +838,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 	    {
 	      if (_M_writing)
 		__computed_off = this->pptr() - this->pbase();
-	      
+
  	      off_type __file_off = _M_file.seekoff(0, ios_base::cur);
  	      if (__file_off != off_type(-1))
 		{
@@ -912,7 +912,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
           return _M_ext_buf + __gptr_off - _M_ext_end;
         }
     }
-    
+
   template<typename _CharT, typename _Traits>
     bool
     basic_filebuf<_CharT, _Traits>::
@@ -1063,7 +1063,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #endif
 #endif
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace std
 
 #endif

@@ -60,9 +60,9 @@
 #include <initializer_list>
 #endif
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_CONTAINER
+_GLIBCXX_BEGIN_NAMESPACE_CONTAINER;
 
   typedef unsigned long _Bit_type;
   enum { _S_word_bit = int(__CHAR_BIT__ * sizeof(_Bit_type)) };
@@ -364,7 +364,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
       return *this;
     }
 
-    const_iterator 
+    const_iterator
     operator+(difference_type __i) const
     {
       const_iterator __tmp = *this;
@@ -426,7 +426,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
 	_Bvector_impl()
 	: _Bit_alloc_type(), _M_start(), _M_finish(), _M_end_of_storage()
 	{ }
- 
+
 	_Bvector_impl(const _Bit_alloc_type& __a)
 	: _Bit_alloc_type(__a), _M_start(), _M_finish(), _M_end_of_storage()
 	{ }
@@ -464,7 +464,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
 
       _Bvector_base()
       : _M_impl() { }
-      
+
       _Bvector_base(const allocator_type& __a)
       : _M_impl(__a) { }
 
@@ -510,15 +510,15 @@ _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
       { return (__n + int(_S_word_bit) - 1) / int(_S_word_bit); }
     };
 
-_GLIBCXX_END_NAMESPACE_CONTAINER
+_GLIBCXX_END_NAMESPACE_CONTAINER;
 } // namespace std
 
 // Declare a partial specialization of vector<T, Alloc>.
 #include <bits/stl_vector.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_CONTAINER
+_GLIBCXX_BEGIN_NAMESPACE_CONTAINER;
 
   /**
    *  @brief  A specialization of vector for booleans which offers fixed time
@@ -590,7 +590,7 @@ template<typename _Alloc>
     : vector(__n, false, __a)
     { }
 
-    vector(size_type __n, const bool& __value, 
+    vector(size_type __n, const bool& __value,
 	   const allocator_type& __a = allocator_type())
     : _Base(__a)
     {
@@ -600,7 +600,7 @@ template<typename _Alloc>
     }
 #else
     explicit
-    vector(size_type __n, const bool& __value = bool(), 
+    vector(size_type __n, const bool& __value = bool(),
 	   const allocator_type& __a = allocator_type())
     : _Base(__a)
     {
@@ -933,7 +933,7 @@ template<typename _Alloc>
     {
       std::swap(this->_M_impl._M_start, __x._M_impl._M_start);
       std::swap(this->_M_impl._M_finish, __x._M_impl._M_finish);
-      std::swap(this->_M_impl._M_end_of_storage, 
+      std::swap(this->_M_impl._M_end_of_storage,
 		__x._M_impl._M_end_of_storage);
       _Bit_alloc_traits::_S_on_swap(_M_get_Bit_allocator(),
 				    __x._M_get_Bit_allocator());
@@ -1120,15 +1120,15 @@ template<typename _Alloc>
       _M_initialize_dispatch(_Integer __n, _Integer __x, __true_type)
       {
 	_M_initialize(static_cast<size_type>(__n));
-	std::fill(this->_M_impl._M_start._M_p, 
+	std::fill(this->_M_impl._M_start._M_p,
 		  this->_M_impl._M_end_addr(), __x ? ~0 : 0);
       }
 
     template<typename _InputIterator>
-      void 
+      void
       _M_initialize_dispatch(_InputIterator __first, _InputIterator __last,
 			     __false_type)
-      { _M_initialize_range(__first, __last, 
+      { _M_initialize_range(__first, __last,
 			    std::__iterator_category(__first)); }
 
     template<typename _InputIterator>
@@ -1168,14 +1168,14 @@ template<typename _Alloc>
     {
       if (__n > size())
 	{
-	  std::fill(this->_M_impl._M_start._M_p, 
+	  std::fill(this->_M_impl._M_start._M_p,
 		    this->_M_impl._M_end_addr(), __x ? ~0 : 0);
 	  insert(end(), __n - size(), __x);
 	}
       else
 	{
 	  _M_erase_at_end(begin() + __n);
-	  std::fill(this->_M_impl._M_start._M_p, 
+	  std::fill(this->_M_impl._M_start._M_p,
 		    this->_M_impl._M_end_addr(), __x ? ~0 : 0);
 	}
     }
@@ -1193,7 +1193,7 @@ template<typename _Alloc>
 	else
 	  insert(end(), __first, __last);
       }
-    
+
     template<typename _ForwardIterator>
       void
       _M_assign_aux(_ForwardIterator __first, _ForwardIterator __last,
@@ -1234,7 +1234,7 @@ template<typename _Alloc>
 
     template<typename _InputIterator>
       void
-      _M_insert_range(iterator __pos, _InputIterator __first, 
+      _M_insert_range(iterator __pos, _InputIterator __first,
 		      _InputIterator __last, std::input_iterator_tag)
       {
 	for (; __first != __last; ++__first)
@@ -1246,7 +1246,7 @@ template<typename _Alloc>
 
     template<typename _ForwardIterator>
       void
-      _M_insert_range(iterator __position, _ForwardIterator __first, 
+      _M_insert_range(iterator __position, _ForwardIterator __first,
 		      _ForwardIterator __last, std::forward_iterator_tag);
 
     void
@@ -1273,16 +1273,16 @@ template<typename _Alloc>
     _M_erase(iterator __first, iterator __last);
   };
 
-_GLIBCXX_END_NAMESPACE_CONTAINER
+_GLIBCXX_END_NAMESPACE_CONTAINER;
 } // namespace std
 
 #if __cplusplus >= 201103L
 
 #include <bits/functional_hash.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   // DR 1182.
   /// std::hash specialization for vector<bool>.
@@ -1294,7 +1294,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       operator()(const _GLIBCXX_STD_C::vector<bool, _Alloc>&) const noexcept;
     };
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 }// namespace std
 
 #endif // C++11

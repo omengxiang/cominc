@@ -38,9 +38,9 @@
 
 #if __cplusplus >= 201703L
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   template<typename _CharT, typename _Traits>
     constexpr typename basic_string_view<_CharT, _Traits>::size_type
@@ -217,7 +217,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       return npos;
     }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace std
 
 #endif // __cplusplus <= 201402L

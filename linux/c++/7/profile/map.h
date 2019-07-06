@@ -31,7 +31,7 @@
 #include <profile/base.h>
 #include <profile/ordered_base.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace __profile
 {
@@ -319,7 +319,7 @@ namespace __profile
       {
 	size_type size_before = this->size();
 	_Base_iterator __res = _Base::insert(__pos.base(), __x);
-	
+
 	__profcxx_map2umap_insert(this->_M_map2umap_info,
 		size_before, _M_hint_used(__pos.base(), __res) ? 0 : 1);
 	return iterator(__res, this);
@@ -334,7 +334,7 @@ namespace __profile
 	{
 	  size_type size_before = this->size();
 	  auto __res = _Base::insert(__pos.base(), std::forward<_Pair>(__x));
-	
+
 	  __profcxx_map2umap_insert(this->_M_map2umap_info,
 		size_before, _M_hint_used(__pos.base(), __res) ? 0 : 1);
 	  return iterator(__res, this);
@@ -638,7 +638,7 @@ namespace __profile
       template<typename _K1, typename _T1, typename _C1, typename _A1>
         friend bool
         operator<(const map<_K1, _T1, _C1, _A1>&,
-		  const map<_K1, _T1, _C1, _A1>&);      
+		  const map<_K1, _T1, _C1, _A1>&);
     };
 
   template<typename _Key, typename _Tp,

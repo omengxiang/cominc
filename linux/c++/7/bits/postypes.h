@@ -65,9 +65,9 @@
 
 #endif
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   // The types streamoff, streampos and wstreampos and the class
   // template fpos<> are described in clauses 21.1.2, 21.1.3, 27.1.2,
@@ -83,12 +83,12 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
    *  implementation defined type.
    *  Note: In versions of GCC up to and including GCC 3.3, streamoff
    *  was typedef long.
-  */  
+  */
 #ifdef _GLIBCXX_HAVE_INT64_T_LONG
   typedef long          streamoff;
 #elif defined(_GLIBCXX_HAVE_INT64_T_LONG_LONG)
   typedef long long     streamoff;
-#elif defined(_GLIBCXX_HAVE_INT64_T) 
+#elif defined(_GLIBCXX_HAVE_INT64_T)
   typedef int64_t       streamoff;
 #else
   typedef long long     streamoff;
@@ -236,7 +236,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
   typedef fpos<mbstate_t> u32streampos;
 #endif
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif

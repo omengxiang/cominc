@@ -30,7 +30,7 @@
  *  Do not attempt to use it directly. @headername{regex}
  */
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 /**
  * @defgroup regex Regular Expressions
@@ -45,7 +45,7 @@ namespace std _GLIBCXX_VISIBILITY(default)
  */
 namespace regex_constants
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    * @name 5.1 Regular Expression Syntax Options
@@ -409,7 +409,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 
   //@}
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace regex_constants
 
 /* @} */ // group regex

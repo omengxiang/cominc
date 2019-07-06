@@ -46,13 +46,13 @@
 #include <bits/stl_iterator_base_funcs.h>
 #include <bits/stl_construct.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace __detail
 {
 namespace __variant
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   template<size_t _Np, typename... _Types>
     struct _Nth_type;
@@ -65,11 +65,11 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     struct _Nth_type<0, _First, _Rest...>
     { using type = _First; };
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace __variant
 } // namespace __detail
 
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
 #define __cpp_lib_variant 201603
 
@@ -141,13 +141,13 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     constexpr variant_alternative_t<_Np, variant<_Types...>> const&&
     get(const variant<_Types...>&&);
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 
 namespace __detail
 {
 namespace __variant
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
   // Returns the first apparence of _Tp in _Types.
   // Returns sizeof...(_Types) if _Tp is not in _Types.
   template<typename _Tp, typename... _Types>
@@ -722,11 +722,11 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 			      std::index_sequence<__indices...>>
     : _Base_dedup<__indices, __poison_hash<remove_const_t<_Types>>>... { };
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace __variant
 } // namespace __detail
 
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   template<typename _Tp, typename... _Types>
     inline constexpr bool holds_alternative(const variant<_Types...>& __v)
@@ -1311,7 +1311,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       }
     };
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace std
 
 #endif // C++17

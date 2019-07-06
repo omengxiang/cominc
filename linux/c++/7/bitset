@@ -57,9 +57,9 @@
 
 #define _GLIBCXX_BITSET_BITS_PER_ULL (__CHAR_BIT__ * __SIZEOF_LONG_LONG__)
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_CONTAINER
+_GLIBCXX_BEGIN_NAMESPACE_CONTAINER;
 
   /**
    *  Base class, general case.  It is a class invariant that _Nw will be
@@ -151,10 +151,10 @@ _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
       }
 
       void
-      _M_do_left_shift(size_t __shift) _GLIBCXX_NOEXCEPT;
+      _M_do_left_shift(size_t __shift) ;
 
       void
-      _M_do_right_shift(size_t __shift) _GLIBCXX_NOEXCEPT;
+      _M_do_right_shift(size_t __shift) ;
 
       void
       _M_do_flip() _GLIBCXX_NOEXCEPT
@@ -223,11 +223,11 @@ _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
 
       // find first "on" bit
       size_t
-      _M_do_find_first(size_t) const _GLIBCXX_NOEXCEPT;
+      _M_do_find_first(size_t) const ;
 
       // find the next "on" bit that follows "prev"
       size_t
-      _M_do_find_next(size_t, size_t) const _GLIBCXX_NOEXCEPT;
+      _M_do_find_next(size_t, size_t) const ;
     };
 
   // Definitions of non-inline functions from _Base_bitset.
@@ -1540,7 +1540,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
     }
   //@}
 
-_GLIBCXX_END_NAMESPACE_CONTAINER
+_GLIBCXX_END_NAMESPACE_CONTAINER;
 } // namespace std
 
 #undef _GLIBCXX_BITSET_WORDS
@@ -1551,9 +1551,9 @@ _GLIBCXX_END_NAMESPACE_CONTAINER
 
 #include <bits/functional_hash.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   // DR 1182.
   /// std::hash specialization for bitset.
@@ -1578,7 +1578,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       { return 0; }
     };
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif // C++11

@@ -60,9 +60,9 @@
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   // 20.3.6 binders
   /** @defgroup binders Binder Classes
@@ -171,10 +171,10 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     {
       typedef typename _Operation::second_argument_type _Arg2_type;
       return binder2nd<_Operation>(__fn, _Arg2_type(__x));
-    } 
+    }
   /** @}  */
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #pragma GCC diagnostic pop

@@ -46,9 +46,9 @@
 
 #if defined(_GLIBCXX_HAS_GTHREADS) && defined(_GLIBCXX_USE_C99_STDINT_TR1)
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    * @defgroup threads Threads
@@ -318,7 +318,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 	return __out << __id._M_thread;
     }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 
   /** @namespace std::this_thread
    *  @brief ISO C++ 2011 entities sub-namespace for thread.
@@ -326,7 +326,7 @@ _GLIBCXX_END_NAMESPACE_VERSION
    */
   namespace this_thread
   {
-  _GLIBCXX_BEGIN_NAMESPACE_VERSION
+  _GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
     /// get_id
     inline thread::id
@@ -396,7 +396,7 @@ _GLIBCXX_END_NAMESPACE_VERSION
 	  }
       }
 
-  _GLIBCXX_END_NAMESPACE_VERSION
+  _GLIBCXX_END_NAMESPACE_VERSION;
   }
 
   // @} group threads

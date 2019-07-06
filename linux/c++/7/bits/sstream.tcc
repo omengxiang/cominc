@@ -36,9 +36,9 @@
 
 #pragma GCC system_header
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   template <class _CharT, class _Traits, class _Alloc>
     typename basic_stringbuf<_CharT, _Traits, _Alloc>::int_type
@@ -55,7 +55,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 	    {
 	      const bool __testeq = traits_type::eq(traits_type::
 						    to_char_type(__c),
-						    this->gptr()[-1]);	  
+						    this->gptr()[-1]);
 	      const bool __testout = this->_M_mode & ios_base::out;
 	      if (__testeq || __testout)
 		{
@@ -301,7 +301,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #endif
 #endif
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace std
 
 #endif

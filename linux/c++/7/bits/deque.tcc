@@ -56,9 +56,9 @@
 #ifndef _DEQUE_TCC
 #define _DEQUE_TCC 1
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_CONTAINER
+_GLIBCXX_BEGIN_NAMESPACE_CONTAINER;
 
 #if __cplusplus >= 201103L
   template <typename _Tp, typename _Alloc>
@@ -1106,7 +1106,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
     }
 #endif
 
-_GLIBCXX_END_NAMESPACE_CONTAINER
+_GLIBCXX_END_NAMESPACE_CONTAINER;
 } // namespace std
 
 #endif

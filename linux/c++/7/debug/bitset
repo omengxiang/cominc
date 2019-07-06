@@ -35,7 +35,7 @@
 #include <debug/safe_sequence.h>
 #include <debug/safe_iterator.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace __debug
 {
@@ -372,7 +372,7 @@ namespace __debug
       operator>>(size_t __pos) const _GLIBCXX_NOEXCEPT
       { return bitset<_Nb>(_M_base() >> __pos); }
 
-      _Base& 
+      _Base&
       _M_base() _GLIBCXX_NOEXCEPT
       { return *this; }
 

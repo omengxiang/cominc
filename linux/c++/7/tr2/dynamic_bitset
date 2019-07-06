@@ -40,11 +40,11 @@
 #include <iosfwd>
 #include <bits/cxxabi_forced.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace tr2
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    *  @defgroup dynamic_bitset Dynamic Bitset.
@@ -1221,7 +1221,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
    *  @}
    */
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // tr2
 } // std
 

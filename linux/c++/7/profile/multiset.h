@@ -32,7 +32,7 @@
 #include <profile/base.h>
 #include <profile/ordered_base.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace __profile
 {
@@ -278,7 +278,7 @@ namespace __profile
       {
 	size_type size_before = this->size();
 	_Base_iterator __res = _Base::insert(__pos.base(), __x);
-	
+
 	__profcxx_map2umap_insert(this->_M_map2umap_info,
 		size_before, _M_hint_used(__pos.base(), __res) ? 0 : 1);
 	return iterator(__res, this);
@@ -369,7 +369,7 @@ namespace __profile
 	_Base::clear();
 	this->_M_profile_construct();
       }
- 
+
       size_type
       count(const key_type& __x) const
       {

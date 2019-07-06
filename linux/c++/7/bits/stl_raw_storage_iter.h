@@ -56,9 +56,9 @@
 #ifndef _STL_RAW_STORAGE_ITERATOR_H
 #define _STL_RAW_STORAGE_ITERATOR_H 1
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    *  This iterator class lets algorithms store their results into
@@ -117,7 +117,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       _OutputIterator base() const { return _M_iter; }
     };
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif

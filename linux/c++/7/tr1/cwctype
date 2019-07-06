@@ -23,7 +23,7 @@
 // <http://www.gnu.org/licenses/>.
 
 /** @file tr1/cwctype
- *  This is a TR1 C++ Library header. 
+ *  This is a TR1 C++ Library header.
  */
 
 #ifndef _GLIBCXX_TR1_CWCTYPE
@@ -35,13 +35,13 @@
 
 #ifdef _GLIBCXX_USE_WCHAR_T
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace tr1
 {
 #if _GLIBCXX_HAVE_ISWBLANK
   using std::iswblank;
-#endif  
+#endif
 }
 }
 

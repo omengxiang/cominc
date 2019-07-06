@@ -28,11 +28,11 @@
  *  Do not attempt to use it directly. @headername{regex}
  */
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace __detail
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
 #ifdef _GLIBCXX_DEBUG
   inline std::ostream&
@@ -234,6 +234,6 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       return _StateSeq(_M_nfa, __m[_M_start], __m[_M_end]);
     }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace __detail
 } // namespace

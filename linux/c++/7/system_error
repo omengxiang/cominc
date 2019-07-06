@@ -40,9 +40,9 @@
 #include <iosfwd>
 #include <stdexcept>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   class error_code;
   class error_condition;
@@ -370,14 +370,14 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     code() const noexcept { return _M_code; }
   };
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #include <bits/functional_hash.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
 #ifndef _GLIBCXX_COMPATIBILITY_CXX0X
   // DR 1182.
@@ -411,7 +411,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     };
 #endif
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif // C++11

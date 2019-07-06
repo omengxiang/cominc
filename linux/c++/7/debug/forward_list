@@ -175,7 +175,7 @@ namespace __gnu_debug
     }
 }
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace __debug
 {

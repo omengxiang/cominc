@@ -35,16 +35,16 @@
 #include <iosfwd>
 #include <bits/cxxabi_forced.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   template<typename _CharT, typename _Traits>
     inline void
     __ostream_write(basic_ostream<_CharT, _Traits>& __out,
 		    const _CharT* __s, streamsize __n)
     {
-      typedef basic_ostream<_CharT, _Traits>       __ostream_type;      
+      typedef basic_ostream<_CharT, _Traits>       __ostream_type;
       typedef typename __ostream_type::ios_base    __ios_base;
 
       const streamsize __put = __out.rdbuf()->sputn(__s, __n);
@@ -56,7 +56,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     inline void
     __ostream_fill(basic_ostream<_CharT, _Traits>& __out, streamsize __n)
     {
-      typedef basic_ostream<_CharT, _Traits>       __ostream_type;      
+      typedef basic_ostream<_CharT, _Traits>       __ostream_type;
       typedef typename __ostream_type::ios_base    __ios_base;
 
       const _CharT __c = __out.fill();
@@ -123,7 +123,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #endif
 #endif
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace std
 
 #endif /* _OSTREAM_INSERT_H */

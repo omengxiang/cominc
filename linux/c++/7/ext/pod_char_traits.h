@@ -36,9 +36,9 @@
 
 #include <string>
 
-namespace __gnu_cxx _GLIBCXX_VISIBILITY(default)
+namespace __gnu_cxx (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   // POD character abstraction.
   // NB: The char_type parameter is a subset of int_type, as to allow
@@ -85,12 +85,12 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 	      const character<_Value, _Int, _St>& rhs)
     { return lhs.value < rhs.value; }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /// char_traits<__gnu_cxx::character> specialization.
   template<typename _Value, typename _Int, typename _St>
@@ -143,7 +143,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 
       static char_type*
       move(char_type* __s1, const char_type* __s2, size_t __n)
-      { 
+      {
 	if (__n == 0)
 	  return __s1;
 	return static_cast<char_type*>
@@ -179,7 +179,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       { return __c1 == __c2; }
 
       static int_type
-      eof() 
+      eof()
       {
 	int_type __r = { static_cast<typename __gnu_cxx::__conditional_type
 			 <std::__is_integer<int_type>::__value,
@@ -192,7 +192,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       { return eq_int_type(__c, eof()) ? int_type() : __c; }
     };
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif

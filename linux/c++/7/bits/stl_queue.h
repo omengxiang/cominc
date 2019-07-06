@@ -62,9 +62,9 @@
 # include <bits/uses_allocator.h>
 #endif
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    *  @brief  A standard container giving FIFO behavior.
@@ -676,7 +676,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     : public uses_allocator<_Sequence, _Alloc>::type { };
 #endif // __cplusplus >= 201103L
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif /* _STL_QUEUE_H */

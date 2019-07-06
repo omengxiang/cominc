@@ -46,7 +46,7 @@
 #ifndef _GLIBCXX_TR1_BETA_FUNCTION_TCC
 #define _GLIBCXX_TR1_BETA_FUNCTION_TCC 1
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 #if _GLIBCXX_USE_STD_SPEC_FUNCS
 # define _GLIBCXX_MATH_NS ::std
@@ -62,11 +62,11 @@ namespace tr1
   // Implementation-space details.
   namespace __detail
   {
-  _GLIBCXX_BEGIN_NAMESPACE_VERSION
+  _GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
     /**
      *   @brief  Return the beta function: \f$B(x,y)\f$.
-     * 
+     *
      *   The beta function is defined by
      *   @f[
      *     B(x,y) = \frac{\Gamma(x)\Gamma(y)}{\Gamma(x+y)}
@@ -114,7 +114,7 @@ namespace tr1
     /**
      *   @brief  Return the beta function \f$B(x,y)\f$ using
      *           the log gamma functions.
-     * 
+     *
      *   The beta function is defined by
      *   @f[
      *     B(x,y) = \frac{\Gamma(x)\Gamma(y)}{\Gamma(x+y)}
@@ -145,7 +145,7 @@ namespace tr1
     /**
      *   @brief  Return the beta function \f$B(x,y)\f$ using
      *           the product form.
-     * 
+     *
      *   The beta function is defined by
      *   @f[
      *     B(x,y) = \frac{\Gamma(x)\Gamma(y)}{\Gamma(x+y)}
@@ -176,7 +176,7 @@ namespace tr1
 
     /**
      *   @brief  Return the beta function \f$ B(x,y) \f$.
-     * 
+     *
      *   The beta function is defined by
      *   @f[
      *     B(x,y) = \frac{\Gamma(x)\Gamma(y)}{\Gamma(x+y)}
@@ -196,7 +196,7 @@ namespace tr1
         return __beta_lgamma(__x, __y);
     }
 
-  _GLIBCXX_END_NAMESPACE_VERSION
+  _GLIBCXX_END_NAMESPACE_VERSION;
   } // namespace __detail
 #undef _GLIBCXX_MATH_NS
 #if ! _GLIBCXX_USE_STD_SPEC_FUNCS && defined(_GLIBCXX_TR1_CMATH)

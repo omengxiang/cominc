@@ -45,9 +45,9 @@
 
 extern "C++"
 {
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   using ::abs;
 
@@ -103,7 +103,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
   { return __x < 0 ? -__x : __x; }
 #endif
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 }
 

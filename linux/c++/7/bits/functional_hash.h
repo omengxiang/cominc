@@ -34,9 +34,9 @@
 
 #include <bits/hash_bytes.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /** @defgroup hashes Hashes
    *  @ingroup functors
@@ -268,7 +268,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     struct __is_fast_hash<hash<long double>> : public std::false_type
     { };
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif // _FUNCTIONAL_HASH_H

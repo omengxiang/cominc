@@ -43,9 +43,9 @@
 
 #ifdef _GLIBCXX_USE_C99_STDINT_TR1
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    * @defgroup mutexes Mutexes
@@ -364,7 +364,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     { __x.swap(__y); }
 
   // @} group mutexes
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 #endif // _GLIBCXX_USE_C99_STDINT_TR1
 

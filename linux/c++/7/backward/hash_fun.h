@@ -58,9 +58,9 @@
 
 #include <bits/c++config.h>
 
-namespace __gnu_cxx _GLIBCXX_VISIBILITY(default)
+namespace __gnu_cxx (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   using std::size_t;
 
@@ -94,7 +94,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 
   template<>
     struct hash<char>
-    { 
+    {
       size_t
       operator()(char __x) const
       { return __x; }
@@ -102,7 +102,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 
   template<>
     struct hash<unsigned char>
-    { 
+    {
       size_t
       operator()(unsigned char __x) const
       { return __x; }
@@ -134,15 +134,15 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 
   template<>
     struct hash<int>
-    { 
-      size_t 
-      operator()(int __x) const 
+    {
+      size_t
+      operator()(int __x) const
       { return __x; }
     };
 
   template<>
     struct hash<unsigned int>
-    { 
+    {
       size_t
       operator()(unsigned int __x) const
       { return __x; }
@@ -164,7 +164,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       { return __x; }
     };
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif

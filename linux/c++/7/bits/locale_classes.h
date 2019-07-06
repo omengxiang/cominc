@@ -40,9 +40,9 @@
 #include <string>
 #include <ext/atomicity.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   // 22.1.1 Class locale
   /**
@@ -845,7 +845,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       ~collate_byname() { }
     };
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 # include <bits/locale_classes.tcc>

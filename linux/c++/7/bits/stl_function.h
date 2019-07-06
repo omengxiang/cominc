@@ -60,9 +60,9 @@
 #include <bits/move.h>
 #endif
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   // 20.3.1 base classes
   /** @defgroup functors Function Objects
@@ -105,10 +105,10 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     struct unary_function
     {
       /// @c argument_type is the type of the argument
-      typedef _Arg 	argument_type;   
+      typedef _Arg 	argument_type;
 
       /// @c result_type is the return type
-      typedef _Result 	result_type;  
+      typedef _Result 	result_type;
     };
 
   /**
@@ -118,7 +118,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     struct binary_function
     {
       /// @c first_argument_type is the type of the first argument
-      typedef _Arg1 	first_argument_type; 
+      typedef _Arg1 	first_argument_type;
 
       /// @c second_argument_type is the type of the second argument
       typedef _Arg2 	second_argument_type;
@@ -1120,7 +1120,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 
   /** @}  */
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #if (__cplusplus < 201103L) || _GLIBCXX_USE_DEPRECATED

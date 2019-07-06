@@ -58,9 +58,9 @@
 #include <tr1/poly_laguerre.tcc>
 #include <tr1/riemann_zeta.tcc>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    * @defgroup mathsf Mathematical Special Functions
@@ -161,7 +161,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
    * @f]
    * is generally found to be within 10^-15 for 64-bit double on linux-x86_64 systems
    * over most of the ranges of validity.
-   * 
+   *
    * @todo Provide accuracy comparisons on a per-function basis for a small
    *       number of targets.
    *
@@ -1198,10 +1198,10 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 
   // @} group mathsf
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace std
 
-namespace __gnu_cxx _GLIBCXX_VISIBILITY(default)
+namespace __gnu_cxx (default)
 {
 
   // Confluent hypergeometric functions

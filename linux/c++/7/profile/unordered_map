@@ -39,7 +39,7 @@
 #define _GLIBCXX_BASE unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>
 #define _GLIBCXX_STD_BASE _GLIBCXX_STD_C::_GLIBCXX_BASE
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace __profile
 {

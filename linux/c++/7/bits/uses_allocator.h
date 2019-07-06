@@ -32,9 +32,9 @@
 #include <type_traits>
 #include <bits/move.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   struct __erased_type { };
 
@@ -179,7 +179,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 				      __ptr, std::forward<_Args>(__args)...);
     }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace std
 
 #endif

@@ -59,9 +59,9 @@
 #include <bits/move.h>
 #include <bits/predefined_ops.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    * @defgroup heap_algorithms Heap
@@ -346,7 +346,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 	  __parent--;
 	}
     }
-  
+
   /**
    *  @brief  Construct a heap over a range.
    *  @param  __first  Start of heap.
@@ -485,7 +485,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       __glibcxx_requires_irreflexive(__first, __last);
 
       __gnu_cxx::__ops::_Iter_less_iter __comp;
-      return __first + 
+      return __first +
 	std::__is_heap_until(__first, std::distance(__first, __last), __comp);
     }
 
@@ -555,7 +555,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     }
 #endif
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif /* _STL_HEAP_H */

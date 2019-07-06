@@ -33,7 +33,7 @@
 #include <profile/base.h>
 #include <profile/iterator_tracker.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace __profile
 {

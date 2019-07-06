@@ -41,7 +41,7 @@
 //   _GLIBCXX_CONST
 //   _GLIBCXX_NORETURN
 //   _GLIBCXX_NOTHROW
-//   _GLIBCXX_VISIBILITY
+//
 #ifndef _GLIBCXX_PURE
 # define _GLIBCXX_PURE __attribute__ ((__pure__))
 #endif
@@ -63,15 +63,15 @@
 
 // Macros for visibility attributes.
 //   _GLIBCXX_HAVE_ATTRIBUTE_VISIBILITY
-//   _GLIBCXX_VISIBILITY
+//
 # define _GLIBCXX_HAVE_ATTRIBUTE_VISIBILITY 1
 
 #if _GLIBCXX_HAVE_ATTRIBUTE_VISIBILITY
-# define _GLIBCXX_VISIBILITY(V) __attribute__ ((__visibility__ (#V)))
+# define (V) __attribute__ ((__visibility__ (#V)))
 #else
 // If this is not supplied by the OS-specific or CPU-specific
 // headers included below, it will be defined to an empty default.
-# define _GLIBCXX_VISIBILITY(V) _GLIBCXX_PSEUDO_VISIBILITY(V)
+# define (V) _GLIBCXX_PSEUDO_VISIBILITY(V)
 #endif
 
 // Macros for deprecated attributes.
@@ -201,7 +201,7 @@
     }
 
     namespace tr2 { }
-    
+
     namespace decimal { }
 
     namespace chrono { }				// C++11
@@ -269,7 +269,7 @@ namespace __gnu_cxx
 
 
 // Defined if inline namespaces are used for versioning.
-# define _GLIBCXX_INLINE_VERSION 0 
+# define _GLIBCXX_INLINE_VERSION 0
 
 // Inline namespace for symbol versioning.
 #if _GLIBCXX_INLINE_VERSION
@@ -324,11 +324,11 @@ namespace __gnu_cxx
   inline namespace __7 { }
   namespace __detail { inline namespace __7 { } }
 }
-# define _GLIBCXX_BEGIN_NAMESPACE_VERSION namespace __7 {
-# define _GLIBCXX_END_NAMESPACE_VERSION }
+# define _GLIBCXX_BEGIN_NAMESPACE_VERSION; namespace __7 {
+# define _GLIBCXX_END_NAMESPACE_VERSION; }
 #else
-# define _GLIBCXX_BEGIN_NAMESPACE_VERSION
-# define _GLIBCXX_END_NAMESPACE_VERSION
+# define _GLIBCXX_BEGIN_NAMESPACE_VERSION;
+# define _GLIBCXX_END_NAMESPACE_VERSION;
 #endif
 
 
@@ -391,30 +391,30 @@ namespace std
 // Macros for opening/closing conditional namespaces.
 // _GLIBCXX_BEGIN_NAMESPACE_ALGO
 // _GLIBCXX_END_NAMESPACE_ALGO
-// _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
-// _GLIBCXX_END_NAMESPACE_CONTAINER
+// _GLIBCXX_BEGIN_NAMESPACE_CONTAINER;
+// _GLIBCXX_END_NAMESPACE_CONTAINER;
 #if defined(_GLIBCXX_DEBUG) || defined(_GLIBCXX_PROFILE)
 # define _GLIBCXX_STD_C __cxx1998
 # define _GLIBCXX_BEGIN_NAMESPACE_CONTAINER \
-	 namespace _GLIBCXX_STD_C { _GLIBCXX_BEGIN_NAMESPACE_VERSION
+	 namespace _GLIBCXX_STD_C { _GLIBCXX_BEGIN_NAMESPACE_VERSION;
 # define _GLIBCXX_END_NAMESPACE_CONTAINER \
-	 _GLIBCXX_END_NAMESPACE_VERSION }
+	 _GLIBCXX_END_NAMESPACE_VERSION; }
 #else
 # define _GLIBCXX_STD_C std
-# define _GLIBCXX_BEGIN_NAMESPACE_CONTAINER _GLIBCXX_BEGIN_NAMESPACE_VERSION
-# define _GLIBCXX_END_NAMESPACE_CONTAINER _GLIBCXX_END_NAMESPACE_VERSION
+# define _GLIBCXX_BEGIN_NAMESPACE_CONTAINER _GLIBCXX_BEGIN_NAMESPACE_VERSION;
+# define _GLIBCXX_END_NAMESPACE_CONTAINER _GLIBCXX_END_NAMESPACE_VERSION;
 #endif
 
 #ifdef _GLIBCXX_PARALLEL
 # define _GLIBCXX_STD_A __cxx1998
 # define _GLIBCXX_BEGIN_NAMESPACE_ALGO \
-	 namespace _GLIBCXX_STD_A { _GLIBCXX_BEGIN_NAMESPACE_VERSION
+	 namespace _GLIBCXX_STD_A { _GLIBCXX_BEGIN_NAMESPACE_VERSION;
 # define _GLIBCXX_END_NAMESPACE_ALGO \
-	 _GLIBCXX_END_NAMESPACE_VERSION }
+	 _GLIBCXX_END_NAMESPACE_VERSION; }
 #else
 # define _GLIBCXX_STD_A std
-# define _GLIBCXX_BEGIN_NAMESPACE_ALGO _GLIBCXX_BEGIN_NAMESPACE_VERSION
-# define _GLIBCXX_END_NAMESPACE_ALGO _GLIBCXX_END_NAMESPACE_VERSION
+# define _GLIBCXX_BEGIN_NAMESPACE_ALGO _GLIBCXX_BEGIN_NAMESPACE_VERSION;
+# define _GLIBCXX_END_NAMESPACE_ALGO _GLIBCXX_END_NAMESPACE_VERSION;
 #endif
 
 // GLIBCXX_ABI Deprecated
@@ -437,8 +437,8 @@ namespace std
 #endif
 #if _GLIBCXX_USE_CXX11_ABI
 # define _GLIBCXX_NAMESPACE_LDBL_OR_CXX11 _GLIBCXX_NAMESPACE_CXX11
-# define _GLIBCXX_BEGIN_NAMESPACE_LDBL_OR_CXX11 _GLIBCXX_BEGIN_NAMESPACE_CXX11
-# define _GLIBCXX_END_NAMESPACE_LDBL_OR_CXX11 _GLIBCXX_END_NAMESPACE_CXX11
+# define _GLIBCXX_BEGIN_NAMESPACE_LDBL_OR_CXX11 _GLIBCXX_BEGIN_NAMESPACE_CXX11;
+# define _GLIBCXX_END_NAMESPACE_LDBL_OR_CXX11 _GLIBCXX_END_NAMESPACE_CXX11;
 #else
 # define _GLIBCXX_NAMESPACE_LDBL_OR_CXX11 _GLIBCXX_NAMESPACE_LDBL
 # define _GLIBCXX_BEGIN_NAMESPACE_LDBL_OR_CXX11 _GLIBCXX_BEGIN_NAMESPACE_LDBL
@@ -1350,7 +1350,7 @@ namespace std
 #define _GLIBCXX_HAVE___CXA_THREAD_ATEXIT_IMPL 1
 
 /* Define as const if the declaration of iconv() needs const. */
-#define _GLIBCXX_ICONV_CONST 
+#define _GLIBCXX_ICONV_CONST
 
 /* Define to the sub-directory in which libtool stores uninstalled libraries.
    */

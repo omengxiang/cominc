@@ -46,11 +46,11 @@
 //
 // awk: http://pubs.opengroup.org/onlinepubs/000095399/utilities/awk.html
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace __detail
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   template<typename _CharT>
     _Scanner<_CharT>::
@@ -584,6 +584,6 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
     }
 #endif
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace __detail
 } // namespace

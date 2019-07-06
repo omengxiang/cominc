@@ -42,9 +42,9 @@
 #include <bits/functional_hash.h>
 #include <bits/enable_special_members.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    *  @addtogroup utilities
@@ -1035,7 +1035,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
   template <typename _Tp> optional(_Tp) -> optional<_Tp>;
 #endif
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace std
 
 #endif // C++17

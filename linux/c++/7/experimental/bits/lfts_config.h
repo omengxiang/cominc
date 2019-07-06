@@ -31,7 +31,7 @@
 #include <bits/c++config.h>
 
 #if _GLIBCXX_INLINE_VERSION
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 namespace chrono
 {

@@ -34,9 +34,9 @@
 
 #pragma GCC system_header
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    * @addtogroup numeric_arrays
@@ -69,7 +69,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 
       ///  Copy constructor.  Both slices refer to the same underlying array.
       mask_array (const mask_array&);
-      
+
       ///  Assignment operator.  Assigns elements to corresponding elements
       ///  of @a a.
       mask_array& operator=(const mask_array&);
@@ -202,7 +202,7 @@ _DEFINE_VALARRAY_OPERATOR(>>, __shift_right)
 
   // @} group numeric_arrays
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace
 
 #endif /* _MASK_ARRAY_H */

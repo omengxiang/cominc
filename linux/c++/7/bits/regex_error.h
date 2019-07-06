@@ -30,7 +30,7 @@
  *  Do not attempt to use it directly. @headername{regex}
  */
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 /**
  * @addtogroup regex
@@ -39,7 +39,7 @@ namespace std _GLIBCXX_VISIBILITY(default)
 
 namespace regex_constants
 {
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   /**
    * @name 5.3 Error Types
@@ -120,10 +120,10 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
   constexpr error_type error_stack(_S_error_stack);
 
   //@}
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace regex_constants
 
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
+_GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
   // [7.8] Class regex_error
   /**
@@ -173,5 +173,5 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
   __throw_regex_error(regex_constants::error_type __ecode, const char* __what)
   { _GLIBCXX_THROW_OR_ABORT(regex_error(__ecode, __what)); }
 
-_GLIBCXX_END_NAMESPACE_VERSION
+_GLIBCXX_END_NAMESPACE_VERSION;
 } // namespace std

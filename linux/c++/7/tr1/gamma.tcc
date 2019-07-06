@@ -48,7 +48,7 @@
 
 #include <tr1/special_function_util.h>
 
-namespace std _GLIBCXX_VISIBILITY(default)
+namespace std (default)
 {
 #if _GLIBCXX_USE_STD_SPEC_FUNCS
 # define _GLIBCXX_MATH_NS ::std
@@ -62,7 +62,7 @@ namespace tr1
   // Implementation-space details.
   namespace __detail
   {
-  _GLIBCXX_BEGIN_NAMESPACE_VERSION
+  _GLIBCXX_BEGIN_NAMESPACE_VERSION;
 
     /**
      *   @brief This returns Bernoulli numbers from a table or by summation
@@ -437,7 +437,7 @@ namespace tr1
 
     /**
      *   @brief  Return the polygamma function @f$ \psi^{(n)}(x) @f$.
-     * 
+     *
      *   The polygamma function is related to the Hurwitz zeta function:
      *   @f[
      *     \psi^{(n)}(x) = (-1)^{n+1} m! \zeta(m+1,x)
@@ -467,7 +467,7 @@ namespace tr1
         }
     }
 
-  _GLIBCXX_END_NAMESPACE_VERSION
+  _GLIBCXX_END_NAMESPACE_VERSION;
   } // namespace __detail
 #undef _GLIBCXX_MATH_NS
 #if ! _GLIBCXX_USE_STD_SPEC_FUNCS && defined(_GLIBCXX_TR1_CMATH)
